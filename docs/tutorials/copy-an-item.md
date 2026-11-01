@@ -116,12 +116,13 @@ Renaming the copy does not rename the original.
 
 ## Verified status
 
-The labels and menu structure were checked against the Girder
-`3.x-maintenance` source at commit
-[`71e5fba`](https://github.com/girder/girder/commit/71e5fba) on 2026-11-01,
-including the item copy implementation that duplicates files and metadata and
-records `copyOfItem`. Not yet run end-to-end against a live DSA instance from
-the documentation environment.
+The menu labels and the `copyItem` behavior were checked against the
+JavaScript served by the live test instance <https://pub-data.bdsa.io/>
+(Girder API `5.0.20.dev2+ge191b30e7`) on 2026-11-01, and against the Girder
+`3.x-maintenance` source at
+[`71e5fba`](https://github.com/girder/girder/commit/71e5fba). The flow has not
+been clicked through with a signed-in account, so it is source-verified, not
+live-tested.
 
 ## Next
 

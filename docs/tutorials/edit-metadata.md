@@ -119,11 +119,13 @@ their own copy of the metadata.
 
 ## Verified status
 
-The labels, row controls, and key validation rules were checked against the
-Girder `3.x-maintenance` source at commit
-[`71e5fba`](https://github.com/girder/girder/commit/71e5fba) on 2026-11-01,
-which is the branch the DSA 3.x image builds from. Not yet run end-to-end
-against a live DSA instance from the documentation environment.
+The metadata controls and key rules were checked against the JavaScript
+served by the live test instance <https://pub-data.bdsa.io/> (Girder API
+`5.0.20.dev2+ge191b30e7`) on 2026-11-01, and against the Girder
+`3.x-maintenance` source at
+[`71e5fba`](https://github.com/girder/girder/commit/71e5fba). The flow has not
+been clicked through with a signed-in account, so it is source-verified, not
+live-tested.
 
 ## Next
 

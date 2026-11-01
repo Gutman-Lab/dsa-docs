@@ -6,8 +6,10 @@ result you can check.
 
 ## Everyday tasks
 
-These four tutorials cover the actions people need first. They are written
-against the Girder 3.x interface that DSA 3.x uses.
+These four tutorials cover the actions people need first. The labels were
+checked against both the Girder 3.x source and the web client served by a live
+DSA test instance, <https://pub-data.bdsa.io/>, on 2026-11-01. The flows have
+not yet been click-tested with a signed-in account.
 
 - [Connect to a DSA server](connect.md) — sign in through the browser, find your
   workspace, and optionally connect from a script with an API key.

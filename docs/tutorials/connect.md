@@ -46,6 +46,8 @@ You should see the DSA home page with a navigation bar across the top and
 
 1. Select **Log In** in the upper-right corner.
 2. In the **Log in** dialog, enter your **Login or email** and **Password**.
+   If two-factor authentication is enabled on your account, also enter the
+   **Two-factor code**.
 3. Select **Login**.
 
 The default administrator account on a fresh reference install is `admin` with
@@ -55,7 +57,7 @@ password `password`. Change that password immediately; see
 ### If you do not have an account
 
 If the server allows self-registration, the **Register** link is shown next to
-**Log In**. Select it and fill in:
+**Log In**. Select it and fill in the **Sign up** dialog:
 
 - **Choose a login name**
 - **Enter email address**
@@ -139,15 +141,21 @@ rather than storing it indefinitely.
 
 ## Verified status
 
-The interface labels and paths in this page were checked against the Girder
-`3.x-maintenance` source at commit
-[`71e5fba`](https://github.com/girder/girder/commit/71e5fba) on 2026-11-01.
-That is the branch the DSA 3.x image builds from. The HTTP calls match the
-current Girder API.
+Checked on 2026-11-01 against the live test instance
+<https://pub-data.bdsa.io/> (Girder API `5.0.20.dev2+ge191b30e7`), using a
+headless Chromium browser while signed out, and against the Girder
+`3.x-maintenance` source at
+[`71e5fba`](https://github.com/girder/girder/commit/71e5fba).
 
-This walkthrough has **not** been run end-to-end against a live DSA instance
-from the documentation environment. The public demo answered HTTP 200, but no
-test account was used. Treat the steps as source-verified, not live-tested.
+Live checks: the home page shows **Register** / **Log In** in the upper-right
+corner; the **Log in** dialog has **Login or email**, **Password**, and
+**Two-factor code**; the **Sign up** dialog has **Choose a login name**,
+**Enter email address**, **Enter first name**, **Enter last name**, **Choose a
+password**, and **Retype password**.
+
+Still **not live-tested**: signing in with an account, the signed-in user menu,
+**My folders**, **My account**, and the API-key screens. Those remain
+source-verified only.
 
 ## Next
 

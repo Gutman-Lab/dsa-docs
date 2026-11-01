@@ -32,10 +32,11 @@ the breadcrumb before you continue.
 
 ## 2. Open the folder actions menu
 
-At the right end of the action bar above the file list, select the button with
-the **folder icon and a small triangle**. Its tooltip is **Folder actions** on a
-folder page, **Collection actions** on a collection page, or **User actions**
-in your personal space. The menu entries you need are the same in all three.
+At the right end of the action bar above the file list, select the icon-only
+menu button marked with a small triangle. The icon matches the location: a
+folder on a folder page, a sitemap on a collection page, or a person in your
+personal space. Hovering over it shows a tooltip such as **folder actions** or
+**collection actions**. The menu entries you need are the same in all three.
 
 ![The action bar and folder actions menu](../assets/tutorials/folder-actions.svg)
 
@@ -97,11 +98,13 @@ which confirms you can write to it.
 
 ## Verified status
 
-The labels and menu structure were checked against the Girder
-`3.x-maintenance` source at commit
-[`71e5fba`](https://github.com/girder/girder/commit/71e5fba) on 2026-11-01,
-which is the branch the DSA 3.x image builds from. Not yet run end-to-end
-against a live DSA instance from the documentation environment.
+The button and menu labels were checked against the JavaScript served by the
+live test instance <https://pub-data.bdsa.io/> (Girder API
+`5.0.20.dev2+ge191b30e7`) on 2026-11-01, and against the Girder
+`3.x-maintenance` source at
+[`71e5fba`](https://github.com/girder/girder/commit/71e5fba). The flow has not
+been clicked through with a signed-in account, so it is source-verified, not
+live-tested.
 
 ## Next
 

@@ -20,10 +20,10 @@ forking silently.
 | `docs/user-guide/annotations.md` | New skeleton | To be filled from HistomicsUI and Girder annotation docs. |
 | `docs/system-overview.md` | Upstream `docs/system-overview/index.md` | Moved and lightly edited; diagrams copied. |
 | `docs/tutorials/index.md` | New | Tutorial index; lists the four task walkthroughs and the remaining plan. |
-| `docs/tutorials/connect.md` | New, from Girder `3.x-maintenance` UI source at `71e5fba` | Sign-in, registration, workspace, and API-key connection. Labels source-verified, not live-tested. |
-| `docs/tutorials/create-a-folder.md` | New, from Girder `3.x-maintenance` UI source at `71e5fba` | Folder creation flow. Labels source-verified, not live-tested. |
-| `docs/tutorials/copy-an-item.md` | New, from Girder `3.x-maintenance` UI source at `71e5fba` | Pick-and-copy flow and the `copyItem` model behavior. Labels source-verified, not live-tested. |
-| `docs/tutorials/edit-metadata.md` | New, from Girder `3.x-maintenance` UI source at `71e5fba` | Simple and JSON metadata editing plus key validation rules. Labels source-verified, not live-tested. |
+| `docs/tutorials/connect.md` | New, from Girder `3.x-maintenance` UI source at `71e5fba` | Sign-in, registration, workspace, and API-key connection. Logged-out home page and the Log in / Sign up dialogs checked in a headless browser against `pub-data.bdsa.io` on 2026-11-01; signed-in steps remain source-verified, not live-tested. |
+| `docs/tutorials/create-a-folder.md` | New, from Girder `3.x-maintenance` UI source at `71e5fba` | Folder creation flow. Labels checked against the live instance's served web client on 2026-11-01; flow not click-tested. |
+| `docs/tutorials/copy-an-item.md` | New, from Girder `3.x-maintenance` UI source at `71e5fba` | Pick-and-copy flow and the `copyItem` model behavior. Labels checked against the live instance's served web client on 2026-11-01; flow not click-tested. |
+| `docs/tutorials/edit-metadata.md` | New, from Girder `3.x-maintenance` UI source at `71e5fba` | Simple and JSON metadata editing plus key validation rules. Labels checked against the live instance's served web client on 2026-11-01; flow not click-tested. |
 | `docs/assets/tutorials/*.svg` | New | Schematics of the action bar, checked actions menu, and metadata panel. Not screenshots. |
 | `docs/reference/rest-api.md` | New skeleton | Points at the Girder API reference. |
 | `docs/reference/python-client.md` | New skeleton | Points at `girder-client` and the DSA CLI test. |
