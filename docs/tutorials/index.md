@@ -26,22 +26,31 @@ self-service collection creation to administrators.
 ## Viewer and annotation
 
 - [Upload and view your first slide](../get-started/first-slide.md)
+- [Annotate a slide](annotate-a-slide.md) — create an annotation, choose a style
+  group, draw, edit, and download it.
+- [Run an analysis](run-an-analysis.md) — start a containerized task on a slide
+  or region and find its output.
 - [Mouse and keyboard controls](../user-guide/controls.md)
 - [Annotation basics](../user-guide/annotations.md)
+- [Annotation style groups](../user-guide/annotation-groups.md)
+
+`Annotate a slide` and `Run an analysis` are **source-verified** against
+HistomicsUI at commit `75a9be6`, not click-tested on a writable slide. Their
+pages state the limits.
 
 ## Planned tutorials
 
 These will be written once they can be run against a current release and a
 dedicated test instance.
 
-- Set up style groups and run a multi-user annotation review.
-- Run a HistomicsTK analysis on a region and open the result.
+- Set up a multi-user annotation review with a shared style-group palette.
 - Convert annotations to masks and back with HistomicsTK.
 - Back up and restore the Girder database and assetstore.
 
 ## Existing examples
 
-The original website collects annotated notebooks and videos on
-[Documentation & Examples](https://digitalslidearchive.github.io/digital_slide_archive/documentation/).
-That page still lives on the Jekyll site and will be consolidated here in a
-later slice.
+The upstream site's
+[Documentation & Examples](https://digitalslidearchive.github.io/digital_slide_archive/documentation/)
+URL is now a redirect to the upstream MkDocs documentation. Its one linked demo
+is already covered by [Try the demo](../get-started/try-the-demo.md). There is no
+separate tutorial list there to copy.

@@ -49,6 +49,8 @@ Short, task-based walkthroughs for the actions people need first:
 - [Create a folder](tutorials/create-a-folder.md)
 - [Copy an item](tutorials/copy-an-item.md)
 - [Edit metadata](tutorials/edit-metadata.md)
+- [Annotate a slide](tutorials/annotate-a-slide.md)
+- [Run an analysis](tutorials/run-an-analysis.md)
 
 ## Project background
 
