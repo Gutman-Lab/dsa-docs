@@ -70,6 +70,7 @@ nav:
   - Tutorials:
       - Overview: tutorials/index.md
       - Connect to a server: tutorials/connect.md
+      - Create a collection: tutorials/create-a-collection.md
       - Create a folder: tutorials/create-a-folder.md
       - Copy an item: tutorials/copy-an-item.md
       - Edit metadata: tutorials/edit-metadata.md

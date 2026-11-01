@@ -13,6 +13,8 @@ not yet been click-tested with a signed-in account.
 
 - [Connect to a DSA server](connect.md) — sign in through the browser, find your
   workspace, and optionally connect from a script with an API key.
+- [Create a collection](create-a-collection.md) — start a shared data tree and
+  set who can see it.
 - [Create a folder](create-a-folder.md) — add a folder in your personal space,
   a collection, or another folder.
 - [Copy an item](copy-an-item.md) — duplicate a slide and its metadata into

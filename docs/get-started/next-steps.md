@@ -7,6 +7,8 @@ on what you want to do.
 
 - [Connect to a DSA server](../tutorials/connect.md) — sign in and find your
   workspace.
+- [Create a collection](../tutorials/create-a-collection.md) — start a shared
+  data tree.
 - [Create a folder](../tutorials/create-a-folder.md) — organize a collection.
 - [Copy an item](../tutorials/copy-an-item.md) — reuse a slide in another
   folder.

@@ -21,6 +21,7 @@ forking silently.
 | `docs/system-overview.md` | Upstream `docs/system-overview/index.md` | Moved and lightly edited; diagrams copied. |
 | `docs/tutorials/index.md` | New | Tutorial index; lists the four task walkthroughs and the remaining plan. |
 | `docs/tutorials/connect.md` | New, from Girder `3.x-maintenance` UI source at `71e5fba` | Sign-in, registration, workspace, and API-key connection. Logged-out home page and the Log in / Sign up dialogs checked in a headless browser against `pub-data.bdsa.io` on 2026-11-01; signed-in steps remain source-verified, not live-tested. |
+| `docs/tutorials/create-a-collection.md` | New, from the live instance's served web client on 2026-11-01 | Collection creation and the private-by-default access rule. Flow not click-tested. |
 | `docs/tutorials/create-a-folder.md` | New, from Girder `3.x-maintenance` UI source at `71e5fba` | Folder creation flow. Labels checked against the live instance's served web client on 2026-11-01; flow not click-tested. |
 | `docs/tutorials/copy-an-item.md` | New, from Girder `3.x-maintenance` UI source at `71e5fba` | Pick-and-copy flow and the `copyItem` model behavior. Labels checked against the live instance's served web client on 2026-11-01; flow not click-tested. |
 | `docs/tutorials/edit-metadata.md` | New, from Girder `3.x-maintenance` UI source at `71e5fba` | Simple and JSON metadata editing plus key validation rules. Labels checked against the live instance's served web client on 2026-11-01; flow not click-tested. |
