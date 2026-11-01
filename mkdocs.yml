@@ -1,4 +1,5 @@
 site_name: Digital Slide Archive Documentation
+site_url: https://gutman-lab.github.io/dsa-docs/
 site_description: Guides and reference for installing, using, and extending the Digital Slide Archive.
 repo_url: https://github.com/Gutman-Lab/dsa-docs
 repo_name: Gutman-Lab/dsa-docs
@@ -66,7 +67,12 @@ nav:
       - Mouse and keyboard controls: user-guide/controls.md
       - Annotation basics: user-guide/annotations.md
   - System Overview: system-overview.md
-  - Tutorials: tutorials/index.md
+  - Tutorials:
+      - Overview: tutorials/index.md
+      - Connect to a server: tutorials/connect.md
+      - Create a folder: tutorials/create-a-folder.md
+      - Copy an item: tutorials/copy-an-item.md
+      - Edit metadata: tutorials/edit-metadata.md
   - Reference:
       - REST API: reference/rest-api.md
       - Python client: reference/python-client.md

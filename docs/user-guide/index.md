@@ -10,12 +10,18 @@ them, and annotating them.
 - [Annotation basics](annotations.md) — the concepts behind annotation
   documents, elements, and style groups.
 
+## Everyday tasks
+
+- [Connect to a DSA server](../tutorials/connect.md)
+- [Create a folder](../tutorials/create-a-folder.md)
+- [Copy an item](../tutorials/copy-an-item.md)
+- [Edit metadata](../tutorials/edit-metadata.md)
+
 ## Planned
 
 The following pages will be written from the HistomicsUI source and from real
 use of the current release, not from memory:
 
-- Uploading and organizing slides.
 - Running analysis tasks from the interface.
 - Managing users, groups, and permissions.
 - Sharing collections and exporting annotations.

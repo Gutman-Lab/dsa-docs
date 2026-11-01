@@ -114,8 +114,8 @@ def main():
     parser.add_argument("site_dir", help="Path to the built site directory")
     parser.add_argument(
         "--base-path",
-        default="/digital_slide_archive/docs",
-        help="URL path prefix used by site_url (default: /digital_slide_archive/docs)",
+        default="/dsa-docs",
+        help="URL path prefix used by site_url (default: /dsa-docs)",
     )
     parser.add_argument(
         "--external",

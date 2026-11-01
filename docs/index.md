@@ -39,6 +39,15 @@ skeletons that point at the source material they will replace.
 
 </div>
 
+## Everyday tutorials
+
+Short, task-based walkthroughs for the actions people need first:
+
+- [Connect to a DSA server](tutorials/connect.md)
+- [Create a folder](tutorials/create-a-folder.md)
+- [Copy an item](tutorials/copy-an-item.md)
+- [Edit metadata](tutorials/edit-metadata.md)
+
 ## About this site
 
 - This repository is a staging area for consolidating DSA information and
@@ -50,5 +59,7 @@ skeletons that point at the source material they will replace.
   [`README.md`](https://github.com/Gutman-Lab/dsa-docs/blob/main/README.md), and
   [`SOURCES.md`](https://github.com/Gutman-Lab/dsa-docs/blob/main/SOURCES.md)
   tracks where each page came from and what is still queued.
-- The site is built with MkDocs Material. Nothing here is published yet: the
-  live marketing site remains the upstream Jekyll site.
+- The site is built with MkDocs Material and published from `main` at
+  <https://gutman-lab.github.io/dsa-docs/>. The upstream project website
+  remains the Jekyll site under `DigitalSlideArchive/digital_slide_archive`;
+  this preview is the consolidation area, not a replacement for it.

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="380" viewBox="0 0 880 380" role="img" aria-labelledby="title desc">
+  <title id="title">The folder page action bar and folder actions menu</title>
+  <desc id="desc">A schematic showing the breadcrumb, the info, Upload here and Folder actions buttons, and the open menu with Create folder here, Create item here, Edit folder and Delete this folder.</desc>
+  <rect width="880" height="380" fill="#ffffff"/>
+  <rect x="20" y="20" width="840" height="300" rx="8" fill="#fafafa" stroke="#d0d7de"/>
+  <text x="44" y="56" font-family="system-ui, sans-serif" font-size="15" fill="#57606a">Collections / Demo / Kidney cases</text>
+
+  <rect x="44" y="76" width="792" height="56" rx="6" fill="#ffffff" stroke="#d0d7de"/>
+  <g font-family="system-ui, sans-serif" font-size="14">
+    <rect x="640" y="88" width="40" height="32" rx="4" fill="#f6f8fa" stroke="#d0d7de"/>
+    <text x="660" y="109" text-anchor="middle" fill="#0969da">i</text>
+
+    <rect x="688" y="88" width="104" height="32" rx="4" fill="#2da44e"/>
+    <text x="740" y="109" text-anchor="middle" fill="#ffffff">Upload here</text>
+
+    <rect x="800" y="88" width="32" height="32" rx="4" fill="#ffffff" stroke="#0969da" stroke-width="2"/>
+    <path d="M808 99h10l3 4h7v10a2 2 0 0 1-2 2h-16a2 2 0 0 1-2-2z" fill="none" stroke="#0969da" stroke-width="2"/>
+    <path d="M820 104l4 4-4 4" fill="none" stroke="#0969da" stroke-width="2"/>
+  </g>
+  <text x="816" y="142" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#57606a">Folder actions</text>
+
+  <g font-family="system-ui, sans-serif" font-size="14">
+    <rect x="600" y="164" width="232" height="132" rx="6" fill="#ffffff" stroke="#d0d7de"/>
+    <rect x="600" y="164" width="232" height="34" rx="6" fill="#f6f8fa"/>
+    <text x="616" y="186" font-size="12" font-weight="600" fill="#57606a">Kidney cases</text>
+    <line x1="600" y1="198" x2="832" y2="198" stroke="#d0d7de"/>
+
+    <rect x="612" y="210" width="14" height="11" rx="2" fill="none" stroke="#57606a" stroke-width="1.5"/>
+    <text x="636" y="221" fill="#24292f">Create folder here</text>
+
+    <rect x="612" y="238" width="11" height="14" rx="2" fill="none" stroke="#57606a" stroke-width="1.5"/>
+    <text x="636" y="249" fill="#24292f">Create item here</text>
+
+    <path d="M612 268h14M612 272l7-8 7 8" fill="none" stroke="#57606a" stroke-width="1.5"/>
+    <text x="636" y="277" fill="#24292f">Edit folder</text>
+
+    <line x1="612" y1="288" x2="820" y2="288" stroke="#eaeef2"/>
+    <path d="M612 296h14M612 296v10h14v-10M615 292v4M623 292v4" fill="none" stroke="#57606a" stroke-width="1.5"/>
+    <text x="636" y="305" fill="#24292f">Delete this folder</text>
+  </g>
+
+  <text x="20" y="352" font-family="system-ui, sans-serif" font-size="13" fill="#57606a">Schematic, not a screenshot: the folder icon with a triangle at the right of the action bar opens the folder actions menu.</text>
+</svg>

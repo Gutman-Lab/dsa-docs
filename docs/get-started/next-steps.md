@@ -3,6 +3,16 @@
 You have a running instance and have opened a slide. Where you go next depends
 on what you want to do.
 
+## Everyday tasks
+
+- [Connect to a DSA server](../tutorials/connect.md) — sign in and find your
+  workspace.
+- [Create a folder](../tutorials/create-a-folder.md) — organize a collection.
+- [Copy an item](../tutorials/copy-an-item.md) — reuse a slide in another
+  folder.
+- [Edit metadata](../tutorials/edit-metadata.md) — record case data and other
+  key/value information.
+
 ## Learn the viewer
 
 - [Mouse and keyboard controls](../user-guide/controls.md) — pan, zoom, rotate,

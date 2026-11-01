@@ -3,12 +3,32 @@
 Source for a consolidated Digital Slide Archive documentation site, built with
 MkDocs Material. This repository is a **staging area**: it pulls guides and
 tutorials from across the DSA ecosystem into one place while the documentation
-is rebuilt. Nothing here is published yet.
+is rebuilt.
+
+**Preview:** <https://gutman-lab.github.io/dsa-docs/> (built from `main` by
+GitHub Actions and published with GitHub Pages).
 
 - `docs/` is the site source.
 - `SOURCES.md` records where each page came from and what is still queued.
 - The canonical upstream code lives in
   [`DigitalSlideArchive/digital_slide_archive`](https://github.com/DigitalSlideArchive/digital_slide_archive).
+
+## Publishing
+
+The site is a static MkDocs build. `.github/workflows/docs.yml` builds it with
+`mkdocs build --strict`, runs the link checker, and deploys the result to
+GitHub Pages on every push to `main`. Pull requests run the same build and
+check but do not deploy.
+
+- `site_url` in `mkdocs.yml` must match the Pages URL: for this repository that
+  is `https://gutman-lab.github.io/dsa-docs/`.
+- The link checker defaults to the matching URL prefix (`/dsa-docs`). Change
+  both values together if the site moves to another path or domain.
+- Pages is enabled for this repository with **GitHub Actions** as the source.
+  There is no `gh-pages` branch and no deploy from a local machine.
+
+To force a rebuild without a content change, run the `docs` workflow manually
+from the Actions tab.
 
 ## Requirements
 
@@ -59,6 +79,11 @@ mkdocs build --strict && python3 scripts/check_links.py site
 ```
 
 Exit code 0 means the build had no warnings and every internal link resolved.
+If the site moves to a different URL path, pass the new prefix explicitly:
+
+```bash
+python3 scripts/check_links.py site --base-path /new-prefix
+```
 
 ## Add a page
 
