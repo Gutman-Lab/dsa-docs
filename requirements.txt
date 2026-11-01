@@ -1,0 +1,5 @@
+# Pinned documentation build dependencies.
+# Update these versions together and rebuild with `mkdocs build --strict`.
+mkdocs==1.6.1
+mkdocs-material==9.8.0
+pymdown-extensions==12.3

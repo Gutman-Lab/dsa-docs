@@ -1,0 +1,75 @@
+site_name: Digital Slide Archive Documentation
+site_description: Guides and reference for installing, using, and extending the Digital Slide Archive.
+repo_url: https://github.com/Gutman-Lab/dsa-docs
+repo_name: Gutman-Lab/dsa-docs
+edit_uri: edit/main/docs/
+copyright: Digital Slide Archive contributors
+
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  language: en
+  features:
+    - content.action.edit
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - toc.follow
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+nav:
+  - Home: index.md
+  - Get Started:
+      - What is DSA?: get-started/what-is-dsa.md
+      - Try the demo: get-started/try-the-demo.md
+      - Install on one machine: get-started/install.md
+      - Upload and view your first slide: get-started/first-slide.md
+      - Next steps: get-started/next-steps.md
+  - User Guide:
+      - Overview: user-guide/index.md
+      - Mouse and keyboard controls: user-guide/controls.md
+      - Annotation basics: user-guide/annotations.md
+  - System Overview: system-overview.md
+  - Tutorials: tutorials/index.md
+  - Reference:
+      - REST API: reference/rest-api.md
+      - Python client: reference/python-client.md
+      - UI components (bdsa-react-components): reference/bdsa-react-components.md
+  - Release notes: release-notes.md
+  - Contributing: contributing.md
