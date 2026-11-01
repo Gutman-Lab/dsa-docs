@@ -44,10 +44,12 @@ section is below the list of folders and items.
 
 4. Select the check mark button to save the row. The **X** button cancels it.
 
-![Adding a simple metadata value](../assets/tutorials/metadata-panel.svg)
+![Entering a simple metadata value](../assets/tutorials/metadata-filled.png)
 
 Saving happens per row. There is no page-level Save button, so add each key and
 accept it before moving on.
+
+![Saved metadata rows on an item](../assets/tutorials/metadata-saved.png)
 
 ## 3. Edit an existing value
 
@@ -119,13 +121,12 @@ their own copy of the metadata.
 
 ## Verified status
 
-The metadata controls and key rules were checked against the JavaScript
-served by the live test instance <https://pub-data.bdsa.io/> (Girder API
-`5.0.20.dev2+ge191b30e7`) on 2026-11-01, and against the Girder
-`3.x-maintenance` source at
-[`71e5fba`](https://github.com/girder/girder/commit/71e5fba). The flow has not
-been clicked through with a signed-in account, so it is source-verified, not
-live-tested.
+**Live-tested** on 2026-11-01 against <https://pub-data.bdsa.io/> (Girder API
+`5.0.20.dev2+ge191b30e7`) with a signed-in test account and headless Chromium.
+Added two simple values (`case_id` and `stain`) to an item, saved each row, and
+confirmed both persisted after reload. The screenshots above come from that
+run. The controls and key rules also match the Girder `3.x-maintenance` source
+at [`71e5fba`](https://github.com/girder/girder/commit/71e5fba).
 
 ## Next
 

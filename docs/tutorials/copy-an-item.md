@@ -36,7 +36,7 @@ item you want to copy.
 The **Checked actions** menu at the left of the action bar becomes enabled and
 shows how many items and folders are checked.
 
-![Checking an item](../assets/tutorials/copy-check.svg)
+![Checking an item in the source folder](../assets/tutorials/copy-check.png)
 
 !!! note "Folders can be copied too"
 
@@ -48,6 +48,8 @@ shows how many items and folders are checked.
 1. Open the **Checked actions** menu — the button with the check mark and a
    small triangle.
 2. Choose **Pick checked resources for Move or Copy**.
+
+![The Checked actions menu with one item selected](../assets/tutorials/copy-pick-menu.png)
 
 The checked items are now *picked*. Picking does not change anything yet; it
 only records what you intend to move or copy.
@@ -78,10 +80,12 @@ selection is active:
 DSA copies the files and metadata. Large slides take longer; the page shows a
 progress indicator while the copy runs.
 
-![Copying the picked item into the destination folder](../assets/tutorials/copy-paste.svg)
+![The destination folder menu with a picked item](../assets/tutorials/copy-destination-menu.png)
 
 When it finishes, the destination list refreshes and the new item appears with
 the same name as the original. The selection is cleared automatically.
+
+![The copied item in the destination folder](../assets/tutorials/copy-done.png)
 
 ## 6. Verify the copy
 
@@ -116,13 +120,13 @@ Renaming the copy does not rename the original.
 
 ## Verified status
 
-The menu labels and the `copyItem` behavior were checked against the
-JavaScript served by the live test instance <https://pub-data.bdsa.io/>
-(Girder API `5.0.20.dev2+ge191b30e7`) on 2026-11-01, and against the Girder
-`3.x-maintenance` source at
-[`71e5fba`](https://github.com/girder/girder/commit/71e5fba). The flow has not
-been clicked through with a signed-in account, so it is source-verified, not
-live-tested.
+**Live-tested** on 2026-11-01 against <https://pub-data.bdsa.io/> (Girder API
+`5.0.20.dev2+ge191b30e7`) with a signed-in test account and headless Chromium.
+Uploaded an image into one folder, checked it, picked it, copied it into a
+second folder, and confirmed the copy appeared with the same name. The
+screenshots above come from that run. Menu labels and `copyItem` behavior also
+match the Girder `3.x-maintenance` source at
+[`71e5fba`](https://github.com/girder/girder/commit/71e5fba).
 
 ## Next
 

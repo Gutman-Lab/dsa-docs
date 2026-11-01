@@ -38,7 +38,7 @@ folder on a folder page, a sitemap on a collection page, or a person in your
 personal space. Hovering over it shows a tooltip such as **folder actions** or
 **collection actions**. The menu entries you need are the same in all three.
 
-![The action bar and folder actions menu](../assets/tutorials/folder-actions.svg)
+![The folder actions menu in a personal folder](../assets/tutorials/folder-actions-menu.png)
 
 The menu shows the current location's name at the top and then actions such as:
 
@@ -58,6 +58,8 @@ The **Create folder** dialog opens with two fields:
 - **Description (optional)** — free text for humans. Not used for access
   control.
 
+![The Create folder dialog](../assets/tutorials/create-folder-dialog.png)
+
 Folder names do not have to be unique, so two folders in the same parent may
 share a name. Pick a naming convention and keep it; future you will thank you.
 
@@ -65,6 +67,8 @@ share a name. Pick a naming convention and keep it; future you will thank you.
 
 Select **Create**. The dialog closes and the folder appears in the list. Its
 row has a folder icon and, like other folders, can be opened by name.
+
+![The new folder in the parent folder list](../assets/tutorials/folder-created.png)
 
 ## 5. Verify the result
 
@@ -98,13 +102,12 @@ which confirms you can write to it.
 
 ## Verified status
 
-The button and menu labels were checked against the JavaScript served by the
-live test instance <https://pub-data.bdsa.io/> (Girder API
-`5.0.20.dev2+ge191b30e7`) on 2026-11-01, and against the Girder
-`3.x-maintenance` source at
-[`71e5fba`](https://github.com/girder/girder/commit/71e5fba). The flow has not
-been clicked through with a signed-in account, so it is source-verified, not
-live-tested.
+**Live-tested** on 2026-11-01 against <https://pub-data.bdsa.io/> (Girder API
+`5.0.20.dev2+ge191b30e7`) with a signed-in test account and headless Chromium.
+Created two folders in **My folders**, confirmed both appeared in the parent
+list, and opened them by name. The screenshots above come from that run. The
+labels also match the Girder `3.x-maintenance` source at
+[`71e5fba`](https://github.com/girder/girder/commit/71e5fba).
 
 ## Next
 

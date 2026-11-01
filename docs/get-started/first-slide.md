@@ -39,8 +39,12 @@ makes it easy to remove later.
 3. Wait for the upload to finish. Whole-slide images are large; a slow transfer
    is normal.
 
+![A file selected in the upload dialog](../assets/tutorials/upload-selected.png)
+
 When the upload completes, the file appears as an item in the folder. DSA does
 not add sample data by default, so this is your first item.
+
+![The uploaded file listed as an item](../assets/tutorials/item-uploaded.png)
 
 ## 4. Open the slide
 

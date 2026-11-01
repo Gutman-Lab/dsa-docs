@@ -82,6 +82,8 @@ When you are signed in:
 - Selecting your name opens a menu with **My folders**, **My account**, and
   **Log out**.
 
+![The signed-in user menu on a live DSA instance](../assets/tutorials/connect-signed-in-menu.png)
+
 If you still see **Log In**, the sign-in did not complete. Check the
 troubleshooting table below.
 
@@ -105,6 +107,9 @@ You can create one in the web interface.
 
 1. Open the menu under your login name and select **My account**.
 2. Select the **API keys** tab.
+
+    ![The API keys tab in My account](../assets/tutorials/account-api-keys.png)
+
 3. Create a key with a name you will recognize, such as `laptop-notebooks`.
 4. Copy the key. The list has a **show** link if you need to reveal it again.
 
@@ -147,19 +152,17 @@ rather than storing it indefinitely.
 
 Checked on 2026-11-01 against the live test instance
 <https://pub-data.bdsa.io/> (Girder API `5.0.20.dev2+ge191b30e7`), using a
-headless Chromium browser while signed out, and against the Girder
-`3.x-maintenance` source at
+headless Chromium browser, and against the Girder `3.x-maintenance` source at
 [`71e5fba`](https://github.com/girder/girder/commit/71e5fba).
 
-Live checks: the home page shows **Register** / **Log In** in the upper-right
-corner; the **Log in** dialog has **Login or email**, **Password**, and
-**Two-factor code**; the **Sign up** dialog has **Choose a login name**,
-**Enter email address**, **Enter first name**, **Enter last name**, **Choose a
-password**, and **Retype password**.
+**Live-tested** by signing in with a test account: the **Log in** dialog, the
+signed-in user menu (**My jobs**, **My folders**, **My account**, **Log out**),
+**My folders**, **My account**, and the **API keys** tab all matched this page.
+The account was created through the **Sign up** dialog described above.
 
-Still **not live-tested**: signing in with an account, the signed-in user menu,
-**My folders**, **My account**, and the API-key screens. Those remain
-source-verified only.
+The **Two-factor code** field is present in the login dialog markup but was not
+exercised, because the test account does not have two-factor authentication
+enabled.
 
 ## Next
 

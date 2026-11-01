@@ -67,8 +67,12 @@ straight to [Copy an item](copy-an-item.md) once you have two folders.
 
 The labels and dialog fields were checked against the JavaScript served by the
 live test instance <https://pub-data.bdsa.io/> (Girder API
-`5.0.20.dev2+ge191b30e7`) on 2026-11-01. The flow has not been clicked through
-with a signed-in account, so it is source-verified, not live-tested.
+`5.0.20.dev2+ge191b30e7`) on 2026-11-01. The **Create collection** dialog and
+its fields were also opened with a signed-in test account. That instance
+restricts collection creation to administrators, so submitting the form
+returned **"You are not authorized to create collections."** The creation
+steps therefore remain source-verified, not live-tested. The other tutorials in
+this section were click-tested on the same instance.
 
 ## Next
 

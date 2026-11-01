@@ -6,10 +6,11 @@ result you can check.
 
 ## Everyday tasks
 
-These four tutorials cover the actions people need first. The labels were
-checked against both the Girder 3.x source and the web client served by a live
-DSA test instance, <https://pub-data.bdsa.io/>, on 2026-11-01. The flows have
-not yet been click-tested with a signed-in account.
+These tutorials cover the actions people need first. Connect, create a folder,
+copy an item, and edit metadata were **click-tested with a signed-in account**
+on <https://pub-data.bdsa.io/> on 2026-11-01, and the screenshots come from
+that run. Create a collection is source-verified only: that instance restricts
+self-service collection creation to administrators.
 
 - [Connect to a DSA server](connect.md) — sign in through the browser, find your
   workspace, and optionally connect from a script with an API key.
