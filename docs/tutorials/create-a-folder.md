@@ -34,7 +34,8 @@ the breadcrumb before you continue.
 
 At the right end of the action bar above the file list, select the button with
 the **folder icon and a small triangle**. Its tooltip is **Folder actions** on a
-folder page, or **Collection actions** on a collection page.
+folder page, **Collection actions** on a collection page, or **User actions**
+in your personal space. The menu entries you need are the same in all three.
 
 ![The action bar and folder actions menu](../assets/tutorials/folder-actions.svg)
 
@@ -91,7 +92,7 @@ which confirms you can write to it.
 | There is no **Create folder here** entry | You have read access only | Ask the owner for write access, or create the folder in **My folders**. |
 | The **Create** button stays disabled | **Name** is empty | Enter a name. |
 | The folder was created somewhere unexpected | Wrong parent | Open the folder, use **Edit folder** to rename it, then copy or move it to the right parent. |
-| The name is rejected | Leading or trailing spaces, or an unusable character | Use a plain name without slashes. |
+| Two folders in the same parent have the same name | Duplicate names are allowed | Rename one with **Edit folder**, or adopt a naming convention that keeps them distinct. |
 | You cannot see a folder you just created | The page still shows a cached list | Reload the page. |
 
 ## Verified status

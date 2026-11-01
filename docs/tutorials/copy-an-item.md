@@ -107,7 +107,7 @@ Renaming the copy does not rename the original.
 
 | Symptom | Likely cause | Fix |
 | --- | --- | --- |
-| **Copy picked resources here** is missing | You do not have write access to the destination, or you are in the source folder | Check the destination's permissions. Copying into the same folder is allowed but usually not what you want. |
+| **Copy picked resources here** is missing | You do not have write access to the destination, or the page is a collection or personal-space page rather than a folder | Open a folder and try again. Items can only be copied into folders, and you need write access there. |
 | The picked selection disappeared | The page was reloaded, or you cleared it | Check the item again and repeat the pick step. |
 | The item appears twice in the destination | You copied it more than once | Delete the extra copy with **Actions** → **Delete item**. |
 | The copy has no files | The copy was still running, or the source files are missing | Wait for the progress indicator to finish and reload. Check the original item's **Files & links** section. |
