@@ -18,6 +18,8 @@ collection when other people need access; use **My folders** for scratch work.
 Select **Collections** in the top navigation. The page lists the collections
 you can read.
 
+![Collections list with the Create collection button at the right end of the toolbar](../assets/tutorials/collections-list.png)
+
 ## 2. Choose "Create collection"
 
 Select **Create collection** at the right end of the toolbar above the list.
@@ -27,9 +29,13 @@ The **Create collection** dialog opens with two fields:
 - **Name** — required. Use a short, stable name such as `kidney-study-2026`.
 - **Description (optional)** — free text shown on the collection page.
 
+![Create collection dialog with a name and description filled in](../assets/tutorials/create-collection-dialog.png)
+
 ## 3. Create it
 
 Select **Create**. The dialog closes and the new collection opens.
+
+![The new collection page with its title, description, and Actions menu](../assets/tutorials/collection-created.png)
 
 A new collection is **private** by default: only you can see it until you grant
 access. To share it, open the collection's action menu and select **Access
@@ -50,6 +56,8 @@ control**, then add users or groups.
 2. Select **Create folder here**.
 3. Enter a **Name** and select **Create**.
 
+![The collection after adding its first folder, with the folder listed and marked Private](../assets/tutorials/collection-first-folder.png)
+
 Continue with [Create a folder](create-a-folder.md) for the details, or go
 straight to [Copy an item](copy-an-item.md) once you have two folders.
 
@@ -65,14 +73,16 @@ straight to [Copy an item](copy-an-item.md) once you have two folders.
 
 ## Verified status
 
-The labels and dialog fields were checked against the JavaScript served by the
-live test instance <https://pub-data.bdsa.io/> (Girder API
-`5.0.20.dev2+ge191b30e7`) on 2026-11-01. The **Create collection** dialog and
-its fields were also opened with a signed-in test account. That instance
-restricts collection creation to administrators, so submitting the form
-returned **"You are not authorized to create collections."** The creation
-steps therefore remain source-verified, not live-tested. The other tutorials in
-this section were click-tested on the same instance.
+Live-tested end to end on 2026-11-01 against <https://pub-data.bdsa.io/>
+(Girder API `5.0.20.dev2+ge191b30e7`) with an administrator test account. The
+Collections list, the **Create collection** dialog, collection creation, and
+creation of the first folder all succeeded. The test collection was deleted
+afterward, so the screenshots contain no real study data.
+
+On this instance collection creation is administrator-only: a non-admin test
+account saw the dialog but received **"You are not authorized to create
+collections."** If the **Create collection** button is missing for you, ask an
+administrator for that permission; the rest of the flow is unchanged.
 
 ## Next
 
