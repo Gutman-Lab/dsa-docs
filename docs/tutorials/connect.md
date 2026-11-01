@@ -50,6 +50,8 @@ You should see the DSA home page with a navigation bar across the top and
    **Two-factor code**.
 3. Select **Login**.
 
+![The Log in dialog on a live DSA instance](../assets/tutorials/connect-login.png)
+
 The default administrator account on a fresh reference install is `admin` with
 password `password`. Change that password immediately; see
 [Upload and view your first slide](../get-started/first-slide.md#1-sign-in).
@@ -65,6 +67,8 @@ If the server allows self-registration, the **Register** link is shown next to
 - **Choose a password** and **Retype password**
 
 Then select **Register**. You are signed in after the account is created.
+
+![The Sign up dialog on a live DSA instance](../assets/tutorials/connect-register.png)
 
 If there is no **Register** link, registration is closed on that server. Ask
 the administrator to create an account for you.

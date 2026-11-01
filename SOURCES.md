@@ -25,7 +25,8 @@ forking silently.
 | `docs/tutorials/create-a-folder.md` | New, from Girder `3.x-maintenance` UI source at `71e5fba` | Folder creation flow. Labels checked against the live instance's served web client on 2026-11-01; flow not click-tested. |
 | `docs/tutorials/copy-an-item.md` | New, from Girder `3.x-maintenance` UI source at `71e5fba` | Pick-and-copy flow and the `copyItem` model behavior. Labels checked against the live instance's served web client on 2026-11-01; flow not click-tested. |
 | `docs/tutorials/edit-metadata.md` | New, from Girder `3.x-maintenance` UI source at `71e5fba` | Simple and JSON metadata editing plus key validation rules. Labels checked against the live instance's served web client on 2026-11-01; flow not click-tested. |
-| `docs/assets/tutorials/*.svg` | New | Schematics of the action bar, checked actions menu, and metadata panel. Not screenshots. |
+| `docs/assets/tutorials/*.svg` | New | Schematics of the action bar, checked actions menu, and metadata panel. |
+| `docs/assets/tutorials/connect-login.png`, `connect-register.png` | Live capture | Real screenshots of the Log in and Sign up dialogs from `pub-data.bdsa.io` on 2026-11-01. |
 | `docs/reference/rest-api.md` | New skeleton | Points at the Girder API reference. |
 | `docs/reference/python-client.md` | New skeleton | Points at `girder-client` and the DSA CLI test. |
 | `docs/reference/bdsa-react-components.md` | New skeleton | Deliberately does not invent props or APIs; the package location is unconfirmed. |
