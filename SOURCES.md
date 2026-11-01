@@ -32,16 +32,21 @@ forking silently.
 | `docs/reference/bdsa-react-components.md` | New skeleton | Deliberately does not invent props or APIs; the package location is unconfirmed. |
 | `docs/release-notes.md` | New skeleton | Will aggregate release notes from DSA and companion repos. |
 | `docs/contributing.md` | Upstream repo conventions | Contributor entry point for DSA and this docs repository. |
+| `docs/migration.md` | Upstream `docs/migration.rst` at `2e16b9a` | RST converted to Markdown; commands transcribed, not executed. |
+| `docs/about.md` | Upstream `README.rst`, `docs/index.md`, and the HPC/community links at `2e16b9a` | New synthesis: history, license, funding, community, collaborators, citation. The upstream `docs/about/index.md` is untouched Jekyll boilerplate and was not reused. |
+| `docs/success-stories.md` | Upstream `docs/_success_stories/*.md` at `2e16b9a` | Both stories converted from Jekyll HTML to Markdown; references kept. |
+| `docs/papers-publications.md` | Upstream `docs/papers-publications/index.md` front matter at `2e16b9a` | 24 entries generated from the YAML list; not independently checked against a citation database. |
 
 ## Still to consolidate
 
 These are known sources that are not yet represented here. Each should become a
 page or merge into an existing page in a later slice.
 
-- Upstream Jekyll pages: `docs/documentation/index.md` (the long tutorial and
-  example list), `docs/migration.rst`, `docs/about/index.md`,
-  `docs/demos-examples/index.md`, `docs/papers-publications/index.md`, and the
-  success stories.
+- Upstream Jekyll pages still outside this site: the demos page
+  (`docs/demos-examples/index.md`, currently one Kitware demo link that is
+  already covered by [Try the demo](docs/get-started/try-the-demo.md)) and the
+  marketing homepage callouts. `docs/documentation/index.md` is only a redirect
+  to the upstream MkDocs site.
 - HistomicsUI user and developer documentation, including the annotation and
   analysis task workflows.
 - Girder user, administrator, and API documentation that DSA relies on.

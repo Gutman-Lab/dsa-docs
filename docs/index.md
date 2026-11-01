@@ -6,8 +6,9 @@ HistomicsUI viewer and annotation interface, and containerized analysis tasks
 from HistomicsTK and other Slicer CLI Web tools.
 
 This documentation site is being rebuilt in focused slices. The **Get Started**
-path and the **controls reference** are ready to use. Other sections are
-skeletons that point at the source material they will replace.
+path, the **task tutorials**, and the **controls reference** are ready to use.
+Some reference sections are still skeletons that point at the source material
+they will replace.
 
 ## Start here
 
@@ -44,9 +45,18 @@ skeletons that point at the source material they will replace.
 Short, task-based walkthroughs for the actions people need first:
 
 - [Connect to a DSA server](tutorials/connect.md)
+- [Create a collection](tutorials/create-a-collection.md)
 - [Create a folder](tutorials/create-a-folder.md)
 - [Copy an item](tutorials/copy-an-item.md)
 - [Edit metadata](tutorials/edit-metadata.md)
+
+## Project background
+
+- [About the project](about.md) — history, license, funding, and community.
+- [Success stories](success-stories.md) — collaborative annotation and TCGA.
+- [Papers and publications](papers-publications.md) — work that uses DSA and
+  its components.
+- [Migration guide](migration.md) — moving from `deploy_docker.py` or Girder 2.
 
 ## About this site
 

@@ -62,6 +62,7 @@ nav:
       - Install on one machine: get-started/install.md
       - Upload and view your first slide: get-started/first-slide.md
       - Next steps: get-started/next-steps.md
+      - Migration guide: migration.md
   - User Guide:
       - Overview: user-guide/index.md
       - Mouse and keyboard controls: user-guide/controls.md
@@ -80,3 +81,7 @@ nav:
       - UI components (bdsa-react-components): reference/bdsa-react-components.md
   - Release notes: release-notes.md
   - Contributing: contributing.md
+  - About:
+      - About the project: about.md
+      - Success stories: success-stories.md
+      - Papers and publications: papers-publications.md
