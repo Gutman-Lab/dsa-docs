@@ -1,0 +1,11 @@
+@media screen {
+  .md-grid {
+    max-width: min(90rem, 100% - 2.4rem);
+  }
+}
+
+@media screen and (max-width: 59.984375em) {
+  .md-grid {
+    max-width: 100%;
+  }
+}
