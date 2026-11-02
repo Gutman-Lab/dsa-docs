@@ -333,10 +333,11 @@ item.
 
 Collections and folders carry access control. Items inherit access from their
 folder; items do not have their own ACL. Annotations are the exception: each
-annotation has its own ACL. See
-[Create a collection](tutorials/create-a-collection.md) for the private-by-default
-behavior and [Annotation basics](user-guide/annotations.md) for annotation
-access.
+annotation has its own ACL. See [Share a collection or folder](tutorials/share-a-collection.md)
+for the task walkthrough, [Permissions and access control](user-guide/permissions.md)
+for the model, [Create a collection](tutorials/create-a-collection.md) for the
+private-by-default behavior, and [Annotation basics](user-guide/annotations.md)
+for annotation access.
 
 ### You cannot see a collection {#cannot-see-collection}
 
