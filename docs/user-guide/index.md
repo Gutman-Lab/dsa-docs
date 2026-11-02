@@ -11,11 +11,14 @@ them, and annotating them.
   documents, elements, and style groups, plus the everyday workflow.
 - [Annotation style groups](annotation-groups.md) — configure a shared palette
   and restrict an annotation to allowed groups.
+- [Permissions and access control](permissions.md) — how users, groups, roles,
+  inheritance, public folders, and annotation access fit together.
 
 ## Everyday tasks
 
 - [Connect to a DSA server](../tutorials/connect.md)
 - [Create a folder](../tutorials/create-a-folder.md)
+- [Share a collection or folder](../tutorials/share-a-collection.md)
 - [Copy an item](../tutorials/copy-an-item.md)
 - [Edit metadata](../tutorials/edit-metadata.md)
 - [Annotate a slide](../tutorials/annotate-a-slide.md)
@@ -26,8 +29,7 @@ them, and annotating them.
 The following pages will be written from the HistomicsUI source and from real
 use of the current release, not from memory:
 
-- Managing users, groups, and permissions.
-- Sharing collections and exporting annotations.
+- Exporting annotations.
 
 If you need one of these now, use the
 [HistomicsUI README](https://github.com/DigitalSlideArchive/HistomicsUI) and the

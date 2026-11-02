@@ -68,6 +68,7 @@ nav:
       - Mouse and keyboard controls: user-guide/controls.md
       - Annotation basics: user-guide/annotations.md
       - Annotation style groups: user-guide/annotation-groups.md
+      - Permissions and access control: user-guide/permissions.md
   - System Overview: system-overview.md
   - Tutorials:
       - Overview: tutorials/index.md
@@ -76,6 +77,7 @@ nav:
       - Create a folder: tutorials/create-a-folder.md
       - Copy an item: tutorials/copy-an-item.md
       - Edit metadata: tutorials/edit-metadata.md
+      - Share a collection or folder: tutorials/share-a-collection.md
       - Annotate a slide: tutorials/annotate-a-slide.md
       - Run an analysis: tutorials/run-an-analysis.md
   - Reference:
