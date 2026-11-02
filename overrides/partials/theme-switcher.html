@@ -1,0 +1,26 @@
+<div class="md-header__option theme-switcher" data-theme-switcher>
+  <button
+    class="md-header__button md-icon theme-switcher__scheme"
+    type="button"
+    title="Switch to light mode"
+    aria-label="Switch to light mode"
+  >
+    <span class="theme-switcher__icon theme-switcher__icon--moon">
+      {% include ".icons/material/weather-night.svg" %}
+    </span>
+    <span class="theme-switcher__icon theme-switcher__icon--sun">
+      {% include ".icons/material/weather-sunny.svg" %}
+    </span>
+  </button>
+  <label class="md-header__button md-icon theme-switcher__colors" title="Change color theme">
+    {% include ".icons/material/palette.svg" %}
+    <select class="theme-switcher__select" aria-label="Color theme">
+      <option value="indigo">Indigo</option>
+      <option value="teal">Teal</option>
+      <option value="deep-purple">Deep purple</option>
+      <option value="green">Green</option>
+      <option value="deep-orange">Deep orange</option>
+      <option value="blue-grey">Blue grey</option>
+    </select>
+  </label>
+</div>

@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block header %}
+  <script>
+    (function () {
+      try {
+        var saved = JSON.parse(localStorage.getItem("dsa-theme"));
+        var prefersLight = window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches;
+        var scheme = (saved && saved.scheme) || (prefersLight ? "default" : "slate");
+        document.body.setAttribute("data-md-color-scheme", scheme);
+        if (saved && saved.primary) {
+          document.body.setAttribute("data-md-color-primary", saved.primary);
+        }
+        if (saved && saved.accent) {
+          document.body.setAttribute("data-md-color-accent", saved.accent);
+        }
+      } catch (error) {
+        document.body.setAttribute(
+          "data-md-color-scheme",
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches
+            ? "default"
+            : "slate"
+        );
+      }
+    })();
+  </script>
+  {{ super() }}
+{% endblock %}

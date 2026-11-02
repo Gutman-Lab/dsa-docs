@@ -12,6 +12,7 @@ site_dir: site
 theme:
   name: material
   language: en
+  custom_dir: overrides
   features:
     - content.action.edit
     - navigation.sections
@@ -20,26 +21,18 @@ theme:
     - search.suggest
     - toc.follow
   palette:
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/weather-night
-        name: Switch to dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/weather-sunny
-        name: Switch to light mode
+    scheme: slate
+    primary: indigo
+    accent: indigo
 
 plugins:
   - search
 
 extra_css:
   - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/theme-switcher.js
 
 markdown_extensions:
   - admonition
