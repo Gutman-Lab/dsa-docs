@@ -33,12 +33,14 @@ take any action.
 For a collection:
 
 1. Select **Collections** in the top navigation.
-2. Open the collection's action menu — the icon-only button with a small
-   triangle at the right end of the action bar.
+2. Select the **Actions** button at the right end of the action bar. Its tooltip
+   is **Collection actions**.
 3. Select **Access control**.
 
-For a folder, open the folder and use the same **Access control** item in the
-folder's action menu.
+For a folder, open the folder and select the lock icon button in the folder's
+action bar. Its tooltip is **Access control**.
+
+![The collection Actions menu with Access control](../assets/tutorials/share-collection-actions-menu.png)
 
 The dialog is titled **Access control** and shows the collection or folder name
 under the title.
@@ -52,7 +54,10 @@ The top of the dialog has two choices:
 - **Public — Anyone can view this collection/folder.** This includes anonymous
   visitors who are not signed in.
 
-Public means **view only**. It does not grant edit or owner access. Leave the
+Public grants **view** access. It does not grant edit or owner access by
+default. When **Public** is selected, a **Manage public access flags...** link
+appears; it can grant a specific capability, such as **Create annotations**, to
+anonymous visitors. Leave it alone unless you intend that. Otherwise, keep the
 resource private unless you specifically want unauthenticated visitors to see
 it.
 
@@ -83,7 +88,7 @@ leaving the rest of the folder read-only.
 Flags are additive: granting a flag never reduces a role. Use a flag when a
 reviewer should annotate but not rename, move, or delete slides.
 
-![Access flags popover showing the Create annotations checkbox](../assets/tutorials/share-folder-flags.png)
+![Access flags popover with Create annotations over the folder Access control dialog](../assets/tutorials/share-folder-flags.png)
 
 ## 5. Choose what happens to subfolders
 
