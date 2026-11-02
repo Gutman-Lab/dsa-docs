@@ -231,8 +231,8 @@ copies.
 
 ### Decision record
 
-- **2026-11-02 — source of truth approved.** The board approved this page as the
-  canonical release and upgrade feed, with entries derived from merged PRs and
+- **2026-11-02 — source of truth approved** in the GUT-29 review. This page is
+  the canonical release and upgrade feed, with entries derived from merged PRs and
   date-stamped Docker images. No release or deploy automation was approved or
   added. DevOps may review the technical details of an entry (image tags, compose
   files, database, assetstore, rollback); that review is part of drafting, not a
