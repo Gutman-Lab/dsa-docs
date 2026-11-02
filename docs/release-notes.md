@@ -131,6 +131,13 @@ The full file records the remaining branches, including `girder_worker`,
 These steps apply to both reference stacks. Replace `dsa_common_5` with
 `dsa_common` and `devops/ver5` with `devops/dsa` for the Girder 3 stack.
 
+!!! note "Verification status"
+
+    These commands were checked against the reference compose files and the
+    documented backup layout. They were not run as an end-to-end upgrade on a
+    production instance. The `20261030` entry requires no migration, so most
+    operators will only need the rollback steps if they hit a problem.
+
 ### Before upgrading
 
 1. Read the entry's **Upgrade notes** section. If it names a migration, plan it
