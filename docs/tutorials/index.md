@@ -4,6 +4,19 @@ Tutorials are task-based walkthroughs. Each one starts from a working
 installation or a reachable server, states what you need, and ends with a
 result you can check.
 
+## Set up DSA first
+
+If you do not have an instance yet, start with an installation walkthrough:
+
+- [Install on Ubuntu 24.04 (DSA 5)](../get-started/install-ubuntu-24-04.md) —
+  verified end to end with screenshots, a print-ready PDF, and a downloadable
+  bundle.
+- [Install on one machine](../get-started/install.md) — the older Girder 3
+  reference deployment in `devops/dsa`.
+
+To look around without installing anything, use
+[Try the demo](../get-started/try-the-demo.md).
+
 ## Everyday tasks
 
 These tutorials cover the actions people need first. Connect, create a folder,
