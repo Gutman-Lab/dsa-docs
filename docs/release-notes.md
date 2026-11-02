@@ -4,13 +4,13 @@ This page is the release and upgrade feed for the Digital Slide Archive (DSA).
 It records what changed in each release, what operators must do before and after
 upgrading, and how to roll back.
 
-!!! info "Preview and proposed process"
+!!! info "Preview and approved process"
 
     This page is part of the consolidated documentation preview at
     <https://gutman-lab.github.io/dsa-docs/>. It is not part of the official
-    DSA documentation site yet. The source-of-truth choice and process below are
-    **proposed** and await confirmation from the Chief of Staff and DevOps. No
-    release or deployment automation has been added.
+    DSA documentation site yet. The source-of-truth choice and process below
+    were **approved on 2026-11-02** (see [Decision record](#decision-record)).
+    No release or deployment automation has been added.
 
 ## What counts as a release
 
@@ -208,13 +208,14 @@ docker compose down
 DSA_USER=$(id -u):$(id -g) docker compose up -d
 ```
 
-## Release-notes process (proposed)
+## Release-notes process
 
 ### Source of truth
 
-**Proposed: this page.** `docs/release-notes.md` in
+**Approved: this page.** `docs/release-notes.md` in
 [`Gutman-Lab/dsa-docs`](https://github.com/Gutman-Lab/dsa-docs) is the canonical
-release and upgrade feed.
+release and upgrade feed. Entries are derived from merged PRs and date-stamped
+container images.
 
 Why this is the lightest option:
 
@@ -227,6 +228,15 @@ Why this is the lightest option:
 If the project later adopts GitHub Releases or a changelog, this page should
 become the human-readable summary that links to it. Do not maintain two full
 copies.
+
+### Decision record
+
+- **2026-11-02 — source of truth approved.** The board approved this page as the
+  canonical release and upgrade feed, with entries derived from merged PRs and
+  date-stamped Docker images. No release or deploy automation was approved or
+  added. DevOps may review the technical details of an entry (image tags, compose
+  files, database, assetstore, rollback); that review is part of drafting, not a
+  separate gate before publishing on the preview.
 
 ### Who writes entries
 
