@@ -10,6 +10,57 @@
   }
 }
 
+.md-typeset {
+  line-height: 1.48;
+}
+
+.md-typeset p,
+.md-typeset ul,
+.md-typeset ol,
+.md-typeset dl,
+.md-typeset blockquote,
+.md-typeset figure,
+.md-typeset pre {
+  margin-top: 0.7em;
+  margin-bottom: 0.7em;
+}
+
+.md-typeset ul li,
+.md-typeset ol li {
+  margin-bottom: 0.125em;
+}
+
+.md-typeset ul li p,
+.md-typeset ol li p {
+  margin: 0.15em 0;
+}
+
+.md-typeset ul li ul,
+.md-typeset ul li ol,
+.md-typeset ol li ul,
+.md-typeset ol li ol {
+  margin-top: 0.15em;
+  margin-bottom: 0.15em;
+}
+
+.md-typeset table:not([class]) th,
+.md-typeset table:not([class]) td {
+  padding: 0.5rem 0.85rem;
+}
+
+.md-typeset h2 {
+  margin: 1.2em 0 0.45em;
+}
+
+.md-typeset h3 {
+  margin: 1em 0 0.4em;
+}
+
+.md-typeset .admonition,
+.md-typeset details {
+  margin: 1.25em 0;
+}
+
 .theme-switcher {
   align-items: center;
 }
