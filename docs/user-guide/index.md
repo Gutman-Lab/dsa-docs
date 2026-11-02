@@ -11,6 +11,8 @@ them, and annotating them.
   documents, elements, and style groups, plus the everyday workflow.
 - [Annotation style groups](annotation-groups.md) — configure a shared palette
   and restrict an annotation to allowed groups.
+- [Troubleshooting and FAQ](../troubleshooting.md) — fixes for sign-in,
+  viewing, upload, permissions, annotations, and analysis jobs.
 
 ## Everyday tasks
 

@@ -38,6 +38,12 @@ self-service collection creation to administrators.
 HistomicsUI at commit `75a9be6`, not click-tested on a writable slide. Their
 pages state the limits.
 
+## When something goes wrong
+
+- [Troubleshooting and FAQ](../troubleshooting.md) — symptom-first fixes for
+  installation, sign-in, viewing, upload, permissions, annotations, and analysis
+  jobs.
+
 ## Planned tutorials
 
 These will be written once they can be run against a current release and a

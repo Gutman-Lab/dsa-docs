@@ -106,6 +106,10 @@ an analysis script, or to attach the annotation to a paper trail.
 
 ## Troubleshooting
 
+The symptom-first index covers style groups, autosave failures, export, and
+annotations that are invisible after sharing:
+[Troubleshooting and FAQ: annotation](../troubleshooting.md#annotation).
+
 | Symptom | Likely cause | Fix |
 | --- | --- | --- |
 | There is no **New** button | You do not have write access to the item, or you are not signed in | Sign in. Ask the item owner for write access if it is still missing. |

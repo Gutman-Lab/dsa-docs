@@ -29,7 +29,9 @@ or brush stroke. Elements carry a style group name and their coordinates.
 
 Annotations are saved to the server as you edit them. The small spinner beside
 the **Annotations** panel title means a save is in progress; you do not need a
-page-level Save button after drawing.
+page-level Save button after drawing. If saves fail or an annotation is not
+visible to a collaborator, see
+[Troubleshooting and FAQ](../troubleshooting.md#annotation).
 
 ## The two panels you need
 

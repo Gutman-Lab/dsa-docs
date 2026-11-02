@@ -41,6 +41,11 @@ on what you want to do.
 - Build interfaces with the shared React components:
   [bdsa-react-components](../reference/bdsa-react-components.md).
 
+## If something goes wrong
+
+- [Troubleshooting and FAQ](../troubleshooting.md) — install, sign-in, viewing,
+  upload, permissions, annotation, and analysis-job problems.
+
 ## Get involved
 
 - Ask questions in

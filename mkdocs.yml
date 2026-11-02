@@ -82,6 +82,8 @@ nav:
       - REST API: reference/rest-api.md
       - Python client: reference/python-client.md
       - UI components (bdsa-react-components): reference/bdsa-react-components.md
+  - Help:
+      - Troubleshooting and FAQ: troubleshooting.md
   - Release notes: release-notes.md
   - Contributing: contributing.md
   - About:

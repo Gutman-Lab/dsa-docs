@@ -126,6 +126,10 @@ These names come from
 
 ## Troubleshooting
 
+For a symptom-first index that also covers authentication, viewing, upload,
+permissions, annotations, analysis jobs, and recovery, see
+[Troubleshooting and FAQ](../troubleshooting.md#install-and-startup).
+
 | Symptom | Likely cause | Fix |
 | --- | --- | --- |
 | `Bind for 0.0.0.0:8080 failed: port is already allocated` | Another process, often another DSA instance, owns port 8080. | Stop the other process, or start with `DSA_PORT=8081 DSA_USER=$(id -u):$(id -g) docker compose up` and open `http://localhost:8081`. |
