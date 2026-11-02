@@ -28,9 +28,12 @@ they will replace.
 
 -   **Ready to install?**
 
-    Run DSA on one machine with Docker Compose.
+    Run DSA on one machine with Docker Compose. The verified Ubuntu 24.04
+    walkthrough covers the DSA 5 stack with screenshots.
 
     [:material-arrow-right: Install on one machine](get-started/install.md)
+
+    [:material-arrow-right: Ubuntu 24.04 walkthrough](get-started/install-ubuntu-24-04.md)
 
 -   **Already installed?**
 
@@ -55,6 +58,8 @@ Short, task-based walkthroughs for the actions people need first:
 ## Project background
 
 - [About the project](about.md) — history, license, funding, and community.
+- [Release and upgrade notes](release-notes.md) — what changed in the current
+  date-stamped image, how to upgrade, and how to roll back.
 - [Success stories](success-stories.md) — collaborative annotation and TCGA.
 - [Papers and publications](papers-publications.md) — work that uses DSA and
   its components.

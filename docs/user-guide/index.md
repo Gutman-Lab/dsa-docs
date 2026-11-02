@@ -13,6 +13,8 @@ them, and annotating them.
   and restrict an annotation to allowed groups.
 - [Permissions and access control](permissions.md) — how users, groups, roles,
   inheritance, public folders, and annotation access fit together.
+- [Troubleshooting and FAQ](../troubleshooting.md) — fixes for sign-in,
+  viewing, upload, permissions, annotations, and analysis jobs.
 
 ## Everyday tasks
 

@@ -28,6 +28,8 @@ on what you want to do.
   distributed-worker layouts.
 - [What is DSA?](what-is-dsa.md) — how Girder, HistomicsUI, large_image, and
   the worker fit together.
+- [Release and upgrade notes](../release-notes.md) — what changed in the
+  current dated image and how to upgrade or roll back.
 
 ## Work with data and code
 
@@ -38,6 +40,11 @@ on what you want to do.
 - Use the Python client: [Python client](../reference/python-client.md).
 - Build interfaces with the shared React components:
   [bdsa-react-components](../reference/bdsa-react-components.md).
+
+## If something goes wrong
+
+- [Troubleshooting and FAQ](../troubleshooting.md) — install, sign-in, viewing,
+  upload, permissions, annotation, and analysis-job problems.
 
 ## Get involved
 

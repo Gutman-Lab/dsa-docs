@@ -1,5 +1,12 @@
 # Install on one machine
 
+!!! tip "Looking for the DSA 5 walkthrough?"
+
+    [Install on Ubuntu 24.04 (DSA 5)](install-ubuntu-24-04.md) is a verified,
+    screenshot-by-screenshot local install using the `devops/ver5` stack. This
+    page covers the older Girder 3 reference deployment in `devops/dsa`. Use
+    the page that matches the stack you intend to run.
+
 This guide runs DSA on a single Linux computer with Docker Compose. It follows
 the reference deployment in
 [`devops/dsa`](https://github.com/DigitalSlideArchive/digital_slide_archive/tree/master/devops/dsa)
@@ -125,6 +132,10 @@ These names come from
 [`devops/dsa/docker-compose.yml`](https://github.com/DigitalSlideArchive/digital_slide_archive/blob/master/devops/dsa/docker-compose.yml).
 
 ## Troubleshooting
+
+For a symptom-first index that also covers authentication, viewing, upload,
+permissions, annotations, analysis jobs, and recovery, see
+[Troubleshooting and FAQ](../troubleshooting.md#install-and-startup).
 
 | Symptom | Likely cause | Fix |
 | --- | --- | --- |

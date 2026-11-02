@@ -76,6 +76,10 @@ status and logs are in the jobs panel.
 
 ## Troubleshooting
 
+For worker configuration, queued jobs, failed containers, and missing outputs in
+one place, see
+[Troubleshooting and FAQ: analysis jobs](../troubleshooting.md#analysis-jobs).
+
 | Symptom | Likely cause | Fix |
 | --- | --- | --- |
 | The **Analyses** menu is missing | No Slicer CLI Web task is registered, or the image is not open | Ask an administrator to register a Docker image; open the image item itself. |

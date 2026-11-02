@@ -62,8 +62,8 @@ not add sample data by default, so this is your first item.
 
 If the button is missing, `large_image` did not recognize the file as a large
 image. Check the file format, convert it to a pyramidal TIFF or OME-TIFF, and
-upload it again. See the format row in the
-[install troubleshooting table](install.md#troubleshooting).
+upload it again. See [Unsupported formats](../troubleshooting.md#unsupported-format)
+and the format row in the [install troubleshooting table](install.md#troubleshooting).
 
 ## 5. Navigate the image
 

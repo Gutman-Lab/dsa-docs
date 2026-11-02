@@ -56,6 +56,8 @@ Public means **view only**. It does not grant edit or owner access. Leave the
 resource private unless you specifically want unauthenticated visitors to see
 it.
 
+![Public selected in the Access control dialog](../assets/tutorials/share-collection-public.png)
+
 ## 3. Grant access to a user or group
 
 1. In **Grant access to another group or user**, start typing a name. The search
@@ -69,6 +71,8 @@ Prefer one group over many individual entries. A group keeps the access list
 short and makes onboarding and offboarding a membership change instead of a
 per-resource edit.
 
+![Access control dialog for a collection with a user and a group listed](../assets/tutorials/share-collection-access.png)
+
 ## 4. Optional: grant an access flag
 
 Some actions can be allowed without full **Can edit** access. Select the flag
@@ -79,29 +83,39 @@ leaving the rest of the folder read-only.
 Flags are additive: granting a flag never reduces a role. Use a flag when a
 reviewer should annotate but not rename, move, or delete slides.
 
+![Access flags popover showing the Create annotations checkbox](../assets/tutorials/share-folder-flags.png)
+
 ## 5. Choose what happens to subfolders
 
-For a folder, the dialog asks how far the change should reach:
+The dialog asks how far the change should reach. The wording follows the
+resource: for a folder it says **this folder**, and for a collection it says
+**this collection** and covers the folders inside it.
 
 - **Apply permissions only to this folder, not its subfolders** — the current
   folder changes; subfolders keep their existing lists.
 - **Also set permissions on all subfolders to match this folder's permissions**
-  — the same list is written to every subfolder you have admin access to.
+  — the same list, including access flags, is written to every subfolder you
+  have admin access to.
 
 The second option replaces the access list on subfolders rather than merging it.
 If a subfolder has a deliberately different list, choose the first option and
 edit that subfolder separately.
+
+![Folder Access control dialog with the recursive subfolder option selected](../assets/tutorials/share-folder-recursive.png)
 
 ## 6. Save and verify
 
 Select **Save**. Then confirm the result:
 
 - The other person can sign in and find the collection in **Collections**.
-- A **Can view** user can open the collection and its slides but sees no edit or
-  delete controls.
+- A **Can view** user can open the collection and its folders. In the live
+  test the action menus offered only **Download collection** and **Download
+  folder**, with no edit or delete items.
 - A **Can edit** user can add a folder or edit metadata.
 - If the folder was made public, open its URL in a private browser window. You
   should be able to see it without signing in.
+
+![A non-admin user's view of the shared collection](../assets/tutorials/share-collection-bob-view.png)
 
 ## Sharing one item instead of a whole folder
 
@@ -147,13 +161,23 @@ request is sent without waiting for the result.
 
 ## Verified status
 
-**Source-verified, not click-tested.** The dialog labels and behavior were
-checked against Girder `girder/web/src/views/widgets/AccessWidget.js` and the
-`accessEditor` templates at commit `70eb94d`, and the annotation rules against
-`girder/large_image` `docs/girder_annotation_access.rst` at commit `f4ad903`.
-No writable test instance with two non-admin accounts was available for this
-slice, so the flow was not exercised end to end and the page has no screenshots.
-Add a click-test note and screenshots once a test instance is available.
+**Live-tested on 2026-11-02** against a local DSA 5 stack (Girder
+`5.0.23.dev5+g70eb94dcd`, large_image `1.35.7.dev217+g09c6d7801`) with two
+non-admin accounts: Alice as the collection owner and Bob as the collaborator.
+The test covered the collection and folder **Access control** dialogs, the
+private/public choice, adding a user and a group, applying **Can view**, setting
+the **Create annotations** flag, and the recursive subfolder option. Bob could
+see the shared collection, folder, and subfolder; his action menus offered only
+download, and he received `403` when he tried to rename or delete them.
+Anonymous access to a public collection returned the collection tree and
+refused writes. The screenshots on this page come from that run; the test data
+was created for the run.
+
+Not exercised: the folder's **Annotation access control** bulk dialog. The
+annotation ACL rules below are source-verified against `girder/large_image`
+`docs/girder_annotation_access.rst` at commit `f4ad903`. Dialog labels were
+also checked against Girder `AccessWidget.js` and the `accessEditor` templates
+at commit `70eb94d`.
 
 ## Next
 

@@ -99,6 +99,17 @@ lists rather than merging them, and it runs without waiting for a result.
 | Modify an annotation | **Can edit** on the annotation and either **Can edit** on the item's folder or the **Create annotations** flag |
 | Change an annotation's access list | **Is owner** on the annotation |
 
+## Verified status
+
+**Live-checked on 2026-11-02** on a local DSA 5 stack (Girder
+`5.0.23.dev5+g70eb94dcd`, large_image `1.35.7.dev217+g09c6d7801`) with an
+owner account and a non-admin collaborator. The test confirmed the role names,
+private and public visibility, group membership, the **Create annotations**
+flag, folder-to-subfolder propagation, and `403` responses for non-admin rename
+and delete attempts. The annotation ACL rules are source-verified against
+`girder/large_image` `docs/girder_annotation_access.rst` at commit `f4ad903`;
+the bulk **Annotation access control** dialog was not exercised.
+
 ## Related pages
 
 - [Share a collection or folder](../tutorials/share-a-collection.md)
