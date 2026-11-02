@@ -34,7 +34,7 @@ forking silently.
 | `docs/reference/rest-api.md` | New skeleton | Points at the Girder API reference. |
 | `docs/reference/python-client.md` | New skeleton | Points at `girder-client` and the DSA CLI test. |
 | `docs/reference/bdsa-react-components.md` | Published package `bdsa-react-components` 0.2.5 type declarations and repo `Gutman-Lab/bdsa-react-components` at `399c2b3` | Expanded 2026-11-01: install, peer dependencies, auth store/hooks, FolderBrowser, SlideViewer, annotation/thumbnail/protocol components, and version notes. Source-verified against types; not rendered in a live app. The repo's README/API.md are stale where they mention removed exports. |
-| `docs/release-notes.md` | New skeleton | Will aggregate release notes from DSA and companion repos. |
+| `docs/release-notes.md` | DSA merged PRs #532–#538, CircleCI config at `2e16b9a`, Docker Hub tags/digests, and `build-tracking` at `85ae552` | Rewritten 2026-11-02: release model, first date-stamped-image entry, upgrade/rollback, process, and template. No release or deploy automation added. |
 | `docs/contributing.md` | Upstream repo conventions | Contributor entry point for DSA and this docs repository. |
 | `docs/migration.md` | Upstream `docs/migration.rst` at `2e16b9a` | RST converted to Markdown; commands transcribed, not executed. |
 | `docs/about.md` | Upstream `README.rst`, `docs/index.md`, and the HPC/community links at `2e16b9a` | New synthesis: history, license, funding, community, collaborators, citation. The upstream `docs/about/index.md` is untouched Jekyll boilerplate and was not reused. |

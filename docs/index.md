@@ -55,6 +55,8 @@ Short, task-based walkthroughs for the actions people need first:
 ## Project background
 
 - [About the project](about.md) — history, license, funding, and community.
+- [Release and upgrade notes](release-notes.md) — what changed in the current
+  date-stamped image, how to upgrade, and how to roll back.
 - [Success stories](success-stories.md) — collaborative annotation and TCGA.
 - [Papers and publications](papers-publications.md) — work that uses DSA and
   its components.

@@ -28,6 +28,8 @@ on what you want to do.
   distributed-worker layouts.
 - [What is DSA?](what-is-dsa.md) — how Girder, HistomicsUI, large_image, and
   the worker fit together.
+- [Release and upgrade notes](../release-notes.md) — what changed in the
+  current dated image and how to upgrade or roll back.
 
 ## Work with data and code
 
