@@ -34,9 +34,9 @@ forking silently.
 | `docs/assets/tutorials/*.png` | Live capture | Real screenshots of the signed-in user menu, API keys tab, folder actions, create-folder dialog, checked actions and copy flow, metadata rows, and upload. Captured on `pub-data.bdsa.io` on 2026-11-01. |
 | `docs/assets/tutorials/collections-list.png`, `create-collection-dialog.png`, `collection-created.png`, `collection-first-folder.png` | Live capture | Collections list, Create collection dialog, new collection page, and the collection with its first folder. Captured on `pub-data.bdsa.io` on 2026-11-01 with an administrator account; the temporary collection was deleted afterward. |
 | `docs/assets/tutorials/connect-login.png`, `connect-register.png` | Live capture | Real screenshots of the Log in and Sign up dialogs from `pub-data.bdsa.io` on 2026-11-01. |
-| `docs/assets/tutorials/share-*.png` | Live capture | Access control dialogs, the public option, the **Create annotations** access flag, the recursive subfolder option, and a non-admin user's view. Captured on a local DSA 5 stack on 2026-11-02 with an owner account and a non-admin collaborator; the test collection and users were created for the run. |
-| `docs/reference/rest-api.md` | New skeleton | Points at the Girder API reference. |
-| `docs/reference/python-client.md` | New skeleton | Points at `girder-client` and the DSA CLI test. |
+| `docs/assets/tutorials/share-*.png` | Live capture | Collection **Actions** menu, access control dialogs, the public option, the **Create annotations** access flag, the recursive subfolder option, and a non-admin user's view. Captured on a local DSA 5 stack on 2026-11-02 with an owner account and a non-admin collaborator; the test collection and users were created for the run. |
+| `docs/reference/rest-api.md` | Girder `girder/api/v1/{user,api_key,collection,folder,item,file,resource}.py` at `70eb94dcd`; large_image `girder/girder_large_image/rest/tiles.py` and `girder_annotation/girder_large_image_annotation/rest/annotation.py` at `09c6d7801`; `slicer_cli_web/rest_slicer_cli.py` at `70eb94dcd`; live local DSA 5 instance | Reworked 2026-11-02 from a generic skeleton into a verified cookbook. Every recipe was executed against the local DSA 5 stack (Girder `5.0.23.dev5+g70eb94dcd`, `large_image`/`large_image_annotation` `1.35.7.dev217+g09c6d7801`, HistomicsUI `1.8.1.dev208+gee5f4c0da.d20261030`). Read-only list, lookup, tile, and annotation-list recipes were also checked against the public demo (Girder `3.2.18.dev2+g339bcdfe6`). API-key exchange was re-tested and corrected to a form-encoded `POST /api_key/token`. See the page's **Verified status** and **Route sources** sections. |
+| `docs/reference/python-client.md` | `girder-client` `5.0.22` (PyPI) and `5.0.23.dev5+g70eb94dcd` (DSA 5 image); live local DSA 5 instance | Reworked 2026-11-02 with a complete runnable script. Executed end to end locally with both clients and with API-key and username/password authentication: path lookup, collection tree walk, metadata read/write, annotation list/create, item creation and upload, file download with SHA-512 comparison, tile fetch, and analysis job submission/polling. Read-only checks were also made against the public demo. See the page's **Verified status** section. |
 | `docs/reference/bdsa-react-components.md` | Published package `bdsa-react-components` 0.2.5 type declarations and repo `Gutman-Lab/bdsa-react-components` at `399c2b3` | Expanded 2026-11-01: install, peer dependencies, auth store/hooks, FolderBrowser, SlideViewer, annotation/thumbnail/protocol components, and version notes. Source-verified against types; not rendered in a live app. The repo's README/API.md are stale where they mention removed exports. |
 | `docs/release-notes.md` | DSA merged PRs #532–#538, CircleCI config at `2e16b9a`, Docker Hub tags/digests, and `build-tracking` at `85ae552` | Rewritten 2026-11-02: release model, first date-stamped-image entry, upgrade/rollback, process, and template. No release or deploy automation added. |
 | `docs/contributing.md` | Upstream repo conventions | Contributor entry point for DSA and this docs repository. |
@@ -59,7 +59,12 @@ page or merge into an existing page in a later slice.
 - Remaining HistomicsUI user and developer documentation: installation,
   plugin configuration beyond style groups, permissions, and the full Slicer CLI
   schema. The annotation and analysis workflows are now represented here.
-- Girder user, administrator, and API documentation that DSA relies on.
+- Girder user and administrator documentation that DSA relies on. The
+  DSA-specific API routes are now covered by the cookbook pages; Girder's
+  administrative settings, assetstores, and plugin management are still
+  upstream-only.
+- Analysis task documentation beyond the verified `BackgroundIntensity` example:
+  the full Slicer CLI schema, batch inputs, and task-image authoring.
 - Deployment material under `devops/` (external workers, version 5 stack,
   Apptainer and Docker image builds).
 - Existing Gutman-Lab documentation repositories: `bdsa-docs`,
