@@ -13,6 +13,7 @@ forking silently.
 | `docs/get-started/what-is-dsa.md` | New, from upstream `README.rst` and `docs/index.md` at `2e16b9a` | Short orientation; links to upstream components. |
 | `docs/get-started/try-the-demo.md` | Upstream demo links | Demo URLs and expectations only. |
 | `docs/get-started/install.md` | `devops/dsa/README.rst` and `devops/dsa/docker-compose.yml` at `2e16b9a` | Commands transcribed, not executed here (no Docker). Corrects the stale Girder 3 claim. |
+| `docs/get-started/install-ubuntu-24.04.md` | GUT-25 install walkthrough, `devops/ver5` at `2e16b9a`; package from GUT-30 | New 2026-11-02. **Verified** end to end on Ubuntu 24.04.5, Docker 29.9.2, Compose v5.6.1, DSA `5.0.23.dev5+g70eb94dcd`. 12 screenshots in story order; print-ready PDF and full bundle under `docs/assets/downloads/`. Internal DICOM planning section excluded from the public page. |
 | `docs/get-started/first-slide.md` | Upstream workflow docs | Upload, viewer, and sample-data steps. CLI steps unexecuted. |
 | `docs/get-started/next-steps.md` | New | Points at tutorials, reference, and community channels. |
 | `docs/user-guide/index.md` | New | Section landing page. |

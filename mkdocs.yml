@@ -60,6 +60,7 @@ nav:
       - What is DSA?: get-started/what-is-dsa.md
       - Try the demo: get-started/try-the-demo.md
       - Install on one machine: get-started/install.md
+      - Install on Ubuntu 24.04 (DSA 5): get-started/install-ubuntu-24-04.md
       - Upload and view your first slide: get-started/first-slide.md
       - Next steps: get-started/next-steps.md
       - Migration guide: migration.md

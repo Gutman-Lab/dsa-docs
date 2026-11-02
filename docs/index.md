@@ -28,9 +28,12 @@ they will replace.
 
 -   **Ready to install?**
 
-    Run DSA on one machine with Docker Compose.
+    Run DSA on one machine with Docker Compose. The verified Ubuntu 24.04
+    walkthrough covers the DSA 5 stack with screenshots.
 
     [:material-arrow-right: Install on one machine](get-started/install.md)
+
+    [:material-arrow-right: Ubuntu 24.04 walkthrough](get-started/install-ubuntu-24-04.md)
 
 -   **Already installed?**
 
