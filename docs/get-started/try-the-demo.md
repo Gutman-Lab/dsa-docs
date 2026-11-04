@@ -25,6 +25,11 @@ API and the data, HistomicsUI provides the viewer and annotation tools, and
 Slicer CLI Web exposes analysis tasks. It is a full DSA instance, not a static
 screenshot.
 
+## Next
+
+- Want your own instance? [Install on one machine](install.md).
+- Want to understand the parts? [What is DSA?](what-is-dsa.md).
+
 ## Verified status
 
 On 2026-11-01 the demo homepage returned HTTP 200, and its version endpoint
@@ -36,8 +41,3 @@ reported:
 
 That tells you the demo is reachable, not that every feature is available to
 anonymous users. Some actions require an account or edit permission.
-
-## Next
-
-- Want your own instance? [Install on one machine](install.md).
-- Want to understand the parts? [What is DSA?](what-is-dsa.md).

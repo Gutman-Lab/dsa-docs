@@ -4,22 +4,6 @@
 user interfaces. It provides viewer, browser, annotation, and authentication
 components so each DSA front end does not reimplement them.
 
-- **Package:** `bdsa-react-components` on npm
-- **Version documented here:** `0.2.5`
-- **Source:** <https://github.com/Gutman-Lab/bdsa-react-components>
-- **License:** Apache-2.0
-
-!!! info "Verified status"
-
-    This reference was written against the published `0.2.5` package's type
-    declarations and the repository at commit
-    [`399c2b3`](https://github.com/Gutman-Lab/bdsa-react-components/commit/399c2b3)
-    on 2026-11-01. The components were **not rendered in a live DSA
-    application** for this page. The package's own `README.md` and
-    `docs/API.md` still describe removed exports (`Card`, `AnnotationManager`)
-    and a `FolderBrowser` `apiBaseUrl` prop; the `0.2.5` type declarations are
-    authoritative where they disagree.
-
 ## Install
 
 ```bash
@@ -243,3 +227,19 @@ Open an issue at
 <https://github.com/Gutman-Lab/bdsa-react-components/issues>. For changes that
 affect the DSA application, coordinate with the DSA front-end maintainers so the
 library and the application move together.
+
+??? note "Source and version"
+
+    - **Package:** `bdsa-react-components` on npm
+    - **Version documented here:** `0.2.5`
+    - **Source:** <https://github.com/Gutman-Lab/bdsa-react-components>
+    - **License:** Apache-2.0
+
+    This reference was written against the published `0.2.5` package's type
+    declarations and the repository at commit
+    [`399c2b3`](https://github.com/Gutman-Lab/bdsa-react-components/commit/399c2b3)
+    on 2026-11-01. The components were **not rendered in a live DSA
+    application** for this page. The package's own `README.md` and
+    `docs/API.md` still describe removed exports (`Card`, `AnnotationManager`)
+    and a `FolderBrowser` `apiBaseUrl` prop; the `0.2.5` type declarations are
+    authoritative where they disagree.

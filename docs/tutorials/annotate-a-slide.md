@@ -4,16 +4,6 @@ This tutorial takes you from an open slide to a saved annotation you can find,
 edit, and download. It uses the **Annotations** and **Draw** panels in
 HistomicsUI.
 
-!!! info "Verified status"
-
-    The control labels, dialog fields, and shortcuts were checked against the
-    HistomicsUI web client at commit
-    [`75a9be6`](https://github.com/DigitalSlideArchive/HistomicsUI/commit/75a9be6)
-    on 2026-11-01. They were **not click-tested on a writable slide** because
-    this documentation slice had no writable test account. If your deployment
-    differs, the source is authoritative. See
-    [Annotation basics](../user-guide/annotations.md) for the underlying model.
-
 ## Before you start
 
 - You can open a slide in the viewer. If not, start with
@@ -125,3 +115,13 @@ annotations that are invisible after sharing:
 - [Annotation style groups](../user-guide/annotation-groups.md)
 - [Run an analysis](run-an-analysis.md)
 - [Mouse and keyboard controls](../user-guide/controls.md)
+
+??? note "Source and version"
+
+    The control labels, dialog fields, and shortcuts were checked against the
+    HistomicsUI web client at commit
+    [`75a9be6`](https://github.com/DigitalSlideArchive/HistomicsUI/commit/75a9be6)
+    on 2026-11-01. They were **not click-tested on a writable slide** because
+    this documentation slice had no writable test account. If your deployment
+    differs, the source is authoritative. See
+    [Annotation basics](../user-guide/annotations.md) for the underlying model.

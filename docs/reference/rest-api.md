@@ -503,6 +503,32 @@ If a load balancer or reverse proxy in front of DSA returns its own `404`, the
 JSON body will not look like Girder's. Check the proxy configuration before
 changing client credentials.
 
+## Route sources
+
+The routes above are not guesses. They come from the running server and these
+source files:
+
+- Sign-in: `girder/api/v1/user.py` (`GET user/authentication`, `GET user/me`).
+- API keys: `girder/api/v1/api_key.py` (`POST api_key`,
+  `POST api_key/token`).
+- Collections, folders, items, uploads, metadata: `girder/api/v1/collection.py`,
+  `folder.py`, `item.py`, and `file.py` at Girder `70eb94dcd`.
+- Path lookup: `girder/api/v1/resource.py` (`GET resource/lookup`).
+- Tiles: `large_image/girder/girder_large_image/rest/tiles.py` at
+  `09c6d78019c0381402cd814a0060cf4af1bb569e`.
+- Annotations: `large_image/girder_annotation/girder_large_image_annotation/rest/annotation.py`
+  at the same commit.
+- Analysis tasks: the generated `POST /slicer_cli_web/cli/<id>/run` route in
+  `girder/plugins/slicer_cli_web/slicer_cli_web/rest_slicer_cli.py`.
+
+## Next
+
+- [Python client](python-client.md): the same workflow with `girder-client`.
+- [Connect to a server](../tutorials/connect.md): creating an account and an
+  API key in the browser.
+- [Run an analysis](../tutorials/run-an-analysis.md): the HistomicsUI version
+  of the analysis workflow.
+
 ## Verified status
 
 !!! info "Verified status"
@@ -530,29 +556,3 @@ changing client credentials.
     two-factor login, non-admin write permissions, S3 or other external
     assetstores, the `hashsum_download` plugin, and third-party analysis images
     other than `dsarchive/histomicstk:latest`.
-
-## Route sources
-
-The routes above are not guesses. They come from the running server and these
-source files:
-
-- Sign-in: `girder/api/v1/user.py` (`GET user/authentication`, `GET user/me`).
-- API keys: `girder/api/v1/api_key.py` (`POST api_key`,
-  `POST api_key/token`).
-- Collections, folders, items, uploads, metadata: `girder/api/v1/collection.py`,
-  `folder.py`, `item.py`, and `file.py` at Girder `70eb94dcd`.
-- Path lookup: `girder/api/v1/resource.py` (`GET resource/lookup`).
-- Tiles: `large_image/girder/girder_large_image/rest/tiles.py` at
-  `09c6d78019c0381402cd814a0060cf4af1bb569e`.
-- Annotations: `large_image/girder_annotation/girder_large_image_annotation/rest/annotation.py`
-  at the same commit.
-- Analysis tasks: the generated `POST /slicer_cli_web/cli/<id>/run` route in
-  `girder/plugins/slicer_cli_web/slicer_cli_web/rest_slicer_cli.py`.
-
-## Next
-
-- [Python client](python-client.md): the same workflow with `girder-client`.
-- [Connect to a server](../tutorials/connect.md): creating an account and an
-  API key in the browser.
-- [Run an analysis](../tutorials/run-an-analysis.md): the HistomicsUI version
-  of the analysis workflow.

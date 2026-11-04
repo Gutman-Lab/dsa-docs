@@ -5,10 +5,6 @@ on one main computer with one or more worker machines that run image algorithms
 invoked through HistomicsUI or the API. There are additional options, such as
 hosting the database externally, but these are uncommon.
 
-This page is adapted from the existing
-[`docs/system-overview/`](https://github.com/DigitalSlideArchive/digital_slide_archive/tree/master/docs/system-overview)
-page.
-
 ## Single computer setup
 
 ![Single computer diagram](assets/system-diagrams/system-diagram-single-computer-setup.svg "Single Computer Diagram"){ width="75%" }
@@ -62,3 +58,9 @@ process more tasks than slower ones.
 
 - [What is DSA?](get-started/what-is-dsa.md)
 - [Install on one machine](get-started/install.md)
+
+??? note "Source and version"
+
+    This page is adapted from the existing
+    [`docs/system-overview/`](https://github.com/DigitalSlideArchive/digital_slide_archive/tree/master/docs/system-overview)
+    page in the upstream DSA repository.

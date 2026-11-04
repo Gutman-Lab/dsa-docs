@@ -231,6 +231,14 @@ id usually returns `400` (`Invalid item id`) rather than `404`. See
 [REST API: Common error responses](rest-api.md#common-error-responses) for the
 full table.
 
+## Next
+
+- [REST API cookbook](rest-api.md): the same routes with `curl`.
+- [Connect to a server](../tutorials/connect.md): create an account and an API
+  key in the browser.
+- [Run an analysis](../tutorials/run-an-analysis.md): the HistomicsUI analysis
+  workflow.
+
 ## Verified status
 
 !!! info "Verified status"
@@ -255,11 +263,3 @@ full table.
     Not tested: two-factor login, non-admin write permissions, external
     assetstores, the `hashsum_download` plugin, and analysis images other than
     `dsarchive/histomicstk:latest`.
-
-## Next
-
-- [REST API cookbook](rest-api.md): the same routes with `curl`.
-- [Connect to a server](../tutorials/connect.md): create an account and an API
-  key in the browser.
-- [Run an analysis](../tutorials/run-an-analysis.md): the HistomicsUI analysis
-  workflow.

@@ -3,18 +3,6 @@
 This page lists the mouse, touch, and keyboard controls for the HistomicsUI
 image viewer.
 
-!!! info "Source and version"
-
-    Adapted from HistomicsUI's
-    [`docs/controls.rst`](https://github.com/DigitalSlideArchive/HistomicsUI/blob/master/docs/controls.rst)
-    (Apache-2.0), last changed in commit
-    [`2e9a298`](https://github.com/DigitalSlideArchive/HistomicsUI/commit/2e9a298f4e10)
-    on 2025-12-03, and adapted on 2026-11-01.
-
-    **Tested with:** HistomicsUI at that commit. This page was not re-executed
-    against a live viewer in this documentation slice, so treat the source file
-    as authoritative if a shortcut differs in your build.
-
 ## Basic image controls
 
 ### Pan
@@ -175,3 +163,15 @@ channels or bands.
 - **`ctrl+<number>`**: Toggle the visibility of channels or bands 1 through 10.
 - **`alt+ctrl+<number>`**: Toggle the visibility of channels or bands 11
   through 20.
+
+??? note "Source and version"
+
+    Adapted from HistomicsUI's
+    [`docs/controls.rst`](https://github.com/DigitalSlideArchive/HistomicsUI/blob/master/docs/controls.rst)
+    (Apache-2.0), last changed in commit
+    [`2e9a298`](https://github.com/DigitalSlideArchive/HistomicsUI/commit/2e9a298f4e10)
+    on 2025-12-03, and adapted on 2026-11-01.
+
+    **Tested with:** HistomicsUI at that commit. This page was not re-executed
+    against a live viewer in this documentation slice, so treat the source file
+    as authoritative if a shortcut differs in your build.

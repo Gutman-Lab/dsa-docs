@@ -148,6 +148,12 @@ rather than storing it indefinitely.
 | The API key request returns `Invalid API key` | The key was copied incorrectly, deleted, or deactivated | Create a new key and copy the whole value. |
 | The API key request returns `API key functionality is disabled` | The administrator disabled API keys | Use username/password authentication instead. |
 
+## Next
+
+- [Create a folder](create-a-folder.md)
+- [Copy an item](copy-an-item.md)
+- [Edit metadata](edit-metadata.md)
+
 ## Verified status
 
 Checked on 2026-11-01 against the live test instance
@@ -163,9 +169,3 @@ The account was created through the **Sign up** dialog described above.
 The **Two-factor code** field is present in the login dialog markup but was not
 exercised, because the test account does not have two-factor authentication
 enabled.
-
-## Next
-
-- [Create a folder](create-a-folder.md)
-- [Copy an item](copy-an-item.md)
-- [Edit metadata](edit-metadata.md)

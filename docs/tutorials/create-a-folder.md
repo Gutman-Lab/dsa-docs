@@ -100,6 +100,12 @@ which confirms you can write to it.
 | Two folders in the same parent have the same name | Duplicate names are allowed | Rename one with **Edit folder**, or adopt a naming convention that keeps them distinct. |
 | You cannot see a folder you just created | The page still shows a cached list | Reload the page. |
 
+## Next
+
+- [Copy an item](copy-an-item.md)
+- [Edit metadata](edit-metadata.md)
+- [Upload and view your first slide](../get-started/first-slide.md)
+
 ## Verified status
 
 **Live-tested** on 2026-11-01 against <https://pub-data.bdsa.io/> (Girder API
@@ -108,9 +114,3 @@ Created two folders in **My folders**, confirmed both appeared in the parent
 list, and opened them by name. The screenshots above come from that run. The
 labels also match the Girder `3.x-maintenance` source at
 [`71e5fba`](https://github.com/girder/girder/commit/71e5fba).
-
-## Next
-
-- [Copy an item](copy-an-item.md)
-- [Edit metadata](edit-metadata.md)
-- [Upload and view your first slide](../get-started/first-slide.md)

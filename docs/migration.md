@@ -1,7 +1,6 @@
 # Migration guide
 
 This page helps you move between major versions of the Digital Slide Archive.
-It is consolidated from the upstream `docs/migration.rst` on 2026-11-01.
 
 !!! note "Which deployment does this cover?"
 
@@ -81,3 +80,8 @@ one major version at a time and adjust the compatibility version at each step.
     The commands above are transcribed from the upstream migration guide. They
     are not a substitute for a backup. Back up the database and assetstore
     before changing the MongoDB version or compatibility setting.
+
+??? note "Source and version"
+
+    This page is consolidated from the upstream `docs/migration.rst` on
+    2026-11-01.

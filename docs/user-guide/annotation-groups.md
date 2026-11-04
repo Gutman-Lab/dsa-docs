@@ -4,17 +4,6 @@ Style groups give annotations a consistent visual language. A group is a named
 set of fill color, line color, line width, and pattern. Reviewers can then read
 "pink outline" or "green fill" as a label instead of inspecting each element.
 
-!!! info "Source and verification"
-
-    This page is based on HistomicsUI's
-    [`docs/config_options.rst`](https://github.com/DigitalSlideArchive/HistomicsUI/blob/master/docs/config_options.rst)
-    and
-    [`docs/annotation_group_restrictions.rst`](https://github.com/DigitalSlideArchive/HistomicsUI/blob/master/docs/annotation_group_restrictions.rst)
-    at commit
-    [`75a9be6`](https://github.com/DigitalSlideArchive/HistomicsUI/commit/75a9be6),
-    plus the web client's `allowedGroups` utility. It is **source-verified, not
-    live-tested** on a configured DSA instance in this documentation slice.
-
 ## Where groups are configured
 
 Groups are defined in a `.histomicsui_config.yaml` file in a folder. DSA applies
@@ -150,3 +139,14 @@ new element from silently using a group the annotation forbids.
 
 If every group is still offered, check the value: an empty array, a malformed
 JSON string, or a non-string entry makes the annotation unrestricted.
+
+??? note "Source and version"
+
+    This page is based on HistomicsUI's
+    [`docs/config_options.rst`](https://github.com/DigitalSlideArchive/HistomicsUI/blob/master/docs/config_options.rst)
+    and
+    [`docs/annotation_group_restrictions.rst`](https://github.com/DigitalSlideArchive/HistomicsUI/blob/master/docs/annotation_group_restrictions.rst)
+    at commit
+    [`75a9be6`](https://github.com/DigitalSlideArchive/HistomicsUI/commit/75a9be6),
+    plus the web client's `allowedGroups` utility. It is **source-verified, not
+    live-tested** on a configured DSA instance in this documentation slice.

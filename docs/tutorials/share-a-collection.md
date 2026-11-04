@@ -164,6 +164,12 @@ request is sent without waiting for the result.
 | A subfolder kept its old access | The non-recursive option was chosen | Reopen the parent dialog and choose the subfolder option, or edit the subfolder directly. |
 | Changing a folder did not change old annotations | Annotation access is copied at creation time | Use the folder's **Annotation access control** action. |
 
+## Next
+
+- [Permissions and access control](../user-guide/permissions.md)
+- [Create a collection](create-a-collection.md)
+- [Annotate a slide](annotate-a-slide.md)
+
 ## Verified status
 
 **Live-tested on 2026-11-02** against a local DSA 5 stack (Girder
@@ -183,9 +189,3 @@ annotation ACL rules below are source-verified against `girder/large_image`
 `docs/girder_annotation_access.rst` at commit `f4ad903`. Dialog labels were
 also checked against Girder `AccessWidget.js` and the `accessEditor` templates
 at commit `70eb94d`.
-
-## Next
-
-- [Permissions and access control](../user-guide/permissions.md)
-- [Create a collection](create-a-collection.md)
-- [Annotate a slide](annotate-a-slide.md)

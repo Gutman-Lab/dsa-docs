@@ -10,8 +10,6 @@
 This guide runs DSA on a single Linux computer with Docker Compose. It follows
 the reference deployment in
 [`devops/dsa`](https://github.com/DigitalSlideArchive/digital_slide_archive/tree/master/devops/dsa)
-and was written against commit
-[`2e16b9a`](https://github.com/DigitalSlideArchive/digital_slide_archive/commit/2e16b9a).
 
 !!! note "Which Girder version is this?"
 
@@ -171,3 +169,10 @@ value `$(id -u):$(id -g)` would substitute.
 - [Upload and view your first slide](first-slide.md)
 - [Mouse and keyboard controls](../user-guide/controls.md)
 - [Troubleshooting](#troubleshooting)
+
+??? note "Source and version"
+
+    This guide follows the reference deployment in
+    [`devops/dsa`](https://github.com/DigitalSlideArchive/digital_slide_archive/tree/master/devops/dsa)
+    and was written against commit
+    [`2e16b9a`](https://github.com/DigitalSlideArchive/digital_slide_archive/commit/2e16b9a).

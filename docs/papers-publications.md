@@ -4,15 +4,6 @@ A mix of papers published by contributors to the Digital Slide Archive
 and by unaffiliated researchers who have found the system useful in their
 work.
 
-!!! note "Source and verification"
-
-    This list is consolidated from the upstream project website,
-    `docs/papers-publications/index.md` in
-    [DigitalSlideArchive/digital_slide_archive](https://github.com/DigitalSlideArchive/digital_slide_archive),
-    on 2026-11-01. Citations are reproduced as published upstream; links
-    resolve to the publisher, PubMed, or the upstream PDF. The list has
-    not been independently checked against a citation database.
-
 - **[NimbusImage: A Cloud-Computing Platform for Image Analysis.](https://www.nature.com/articles/s41592-025-02942-6)**  
   Niu, Zijian, Thibault Bruyère, David Manthey, Jingxin Li, Aoife O’Farrell, and Arjun Raj. 2025. “NimbusImage: A Cloud-Computing Platform for Image Analysis.” Nature Methods 23 (1): 6–8.  
   [DOI](https://doi.org/10.1038/s41592-025-02942-6) · [Publisher](https://www.nature.com/articles/s41592-025-02942-6) · [PubMed 41266644](https://www.ncbi.nlm.nih.gov/pubmed/?term=41266644)
@@ -106,3 +97,12 @@ work.
 - **[Cancer Digital Slide Archive - an informatics resource to support integrated in silico analysis of TCGA pathology data.](https://www.ncbi.nlm.nih.gov/pubmed/?term=23893318)**  
   Gutman, David A, Jake Cobb, Dhananjaya Somanna, Yuna Park, Fusheng Wang, Tahsin Kurc, Joel H Saltz, Daniel J Brat, Lee A D Cooper, and Jun Kong. “Cancer Digital Slide Archive: An Informatics Resource to Support Integrated in Silico Analysis of TCGA Pathology Data.” Journal of the American Medical Informatics Association 20, no. 6 (November 2013): 1091–98.  
   [DOI](https://doi.org/10.1136/amiajnl-2012-001469) · [Publisher](https://www.ncbi.nlm.nih.gov/pubmed/?term=23893318) · [PubMed 23893318](https://www.ncbi.nlm.nih.gov/pubmed/?term=23893318)
+
+??? note "Source and version"
+
+    This list is consolidated from the upstream project website,
+    `docs/papers-publications/index.md` in
+    [DigitalSlideArchive/digital_slide_archive](https://github.com/DigitalSlideArchive/digital_slide_archive),
+    on 2026-11-01. Citations are reproduced as published upstream; links
+    resolve to the publisher, PubMed, or the upstream PDF. The list has
+    not been independently checked against a citation database.

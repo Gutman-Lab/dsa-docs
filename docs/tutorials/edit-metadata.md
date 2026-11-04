@@ -119,6 +119,12 @@ their own copy of the metadata.
 | A change disappeared | You selected **X**, or navigated away before saving | Edit the row again and select the check mark. |
 | The value you see differs from the file's embedded metadata | They are separate systems | The Metadata panel is authoritative for DSA metadata; file-internal metadata is not changed by it. |
 
+## Next
+
+- [Copy an item](copy-an-item.md)
+- [Create a folder](create-a-folder.md)
+- [Mouse and keyboard controls](../user-guide/controls.md)
+
 ## Verified status
 
 **Live-tested** on 2026-11-01 against <https://pub-data.bdsa.io/> (Girder API
@@ -127,9 +133,3 @@ Added two simple values (`case_id` and `stain`) to an item, saved each row, and
 confirmed both persisted after reload. The screenshots above come from that
 run. The controls and key rules also match the Girder `3.x-maintenance` source
 at [`71e5fba`](https://github.com/girder/girder/commit/71e5fba).
-
-## Next
-
-- [Copy an item](copy-an-item.md)
-- [Create a folder](create-a-folder.md)
-- [Mouse and keyboard controls](../user-guide/controls.md)

@@ -8,23 +8,6 @@ Docker is already installed and working.
 HistomicsUI, large_image, DICOMweb, Slicer CLI Web, the worker, MongoDB,
 RabbitMQ, and Redis all running in Docker.
 
-!!! info "What was verified"
-
-    This walkthrough was run end to end on a clean host on 2026-11-02. Commands
-    and version claims below are frozen at that run; report corrections rather
-    than editing them silently.
-
-    | Item | Value |
-    | --- | --- |
-    | Host OS | Ubuntu 24.04.5 LTS (kernel 6.8.0-147-generic, x86_64) |
-    | Docker Engine | 29.9.2 |
-    | Docker Compose | v5.6.1 |
-    | Repository | `https://github.com/digitalSlideArchive/digital_slide_archive` |
-    | Checked-out commit | `2e16b9a` (Merge pull request #538 from DigitalSlideArchive/update-trivy) |
-    | Install directory | `~/devel/digital-slide-archive` |
-    | DSA version reported by the API | `5.0.23.dev5+g70eb94dcd` |
-    | Web address | `http://localhost:8080` |
-
 !!! note "Which install guide is this?"
 
     This page covers the **DSA 5** stack in `devops/ver5`. For the older Girder 3
@@ -391,3 +374,20 @@ downloaded bundle.
 - [Upload and view your first slide](first-slide.md)
 - [Troubleshooting and FAQ](../troubleshooting.md)
 - [Mouse and keyboard controls](../user-guide/controls.md)
+
+??? note "Source and version"
+
+    This walkthrough was run end to end on a clean host on 2026-11-02. Commands
+    and version claims below are frozen at that run; report corrections rather
+    than editing them silently.
+
+    | Item | Value |
+    | --- | --- |
+    | Host OS | Ubuntu 24.04.5 LTS (kernel 6.8.0-147-generic, x86_64) |
+    | Docker Engine | 29.9.2 |
+    | Docker Compose | v5.6.1 |
+    | Repository | `https://github.com/digitalSlideArchive/digital_slide_archive` |
+    | Checked-out commit | `2e16b9a` (Merge pull request #538 from DigitalSlideArchive/update-trivy) |
+    | Install directory | `~/devel/digital-slide-archive` |
+    | DSA version reported by the API | `5.0.23.dev5+g70eb94dcd` |
+    | Web address | `http://localhost:8080` |

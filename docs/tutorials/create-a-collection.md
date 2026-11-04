@@ -71,6 +71,12 @@ straight to [Copy an item](copy-an-item.md) once you have two folders.
 | Two collections have the same name | Duplicate names are allowed | Rename one with **Edit collection**, or use a naming convention. |
 | You cannot delete the collection | You do not have admin access to it | Ask the collection owner, or an administrator, to delete it. |
 
+## Next
+
+- [Create a folder](create-a-folder.md)
+- [Copy an item](copy-an-item.md)
+- [Edit metadata](edit-metadata.md)
+
 ## Verified status
 
 Live-tested end to end on 2026-11-01 against <https://pub-data.bdsa.io/>
@@ -83,9 +89,3 @@ On this instance collection creation is administrator-only: a non-admin test
 account saw the dialog but received **"You are not authorized to create
 collections."** If the **Create collection** button is missing for you, ask an
 administrator for that permission; the rest of the flow is unchanged.
-
-## Next
-
-- [Create a folder](create-a-folder.md)
-- [Copy an item](copy-an-item.md)
-- [Edit metadata](edit-metadata.md)

@@ -1,9 +1,5 @@
 # Success stories
 
-These stories are consolidated from the upstream project website
-(`docs/_success_stories/`) on 2026-11-01. Wording is reproduced from the
-upstream pages.
-
 ## Developing machine-learning tools through collaborative annotation studies
 
 The primary determinant in machine-learning algorithm performance is the
@@ -90,3 +86,9 @@ management and hosting in their own investigations.
   Informatics Association* 20, no. 6 (November 2013): 1091–98.
   [doi:10.1136/amiajnl-2012-001469](https://doi.org/10.1136/amiajnl-2012-001469)
   · [PMID 23893318](https://www.ncbi.nlm.nih.gov/pubmed/?term=23893318)
+
+??? note "Source and version"
+
+    These stories are consolidated from the upstream project website
+    (`docs/_success_stories/`) on 2026-11-01. Wording is reproduced from the
+    upstream pages.

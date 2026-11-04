@@ -19,11 +19,7 @@ To look around without installing anything, use
 
 ## Everyday tasks
 
-These tutorials cover the actions people need first. Connect, create a folder,
-copy an item, and edit metadata were **click-tested with a signed-in account**
-on <https://pub-data.bdsa.io/> on 2026-11-01, and the screenshots come from
-that run. Create a collection is source-verified only: that instance restricts
-self-service collection creation to administrators.
+These tutorials cover the actions people need first.
 
 - [Connect to a DSA server](connect.md) — sign in through the browser, find your
   workspace, and optionally connect from a script with an API key.
@@ -49,10 +45,6 @@ self-service collection creation to administrators.
 - [Annotation basics](../user-guide/annotations.md)
 - [Annotation style groups](../user-guide/annotation-groups.md)
 
-`Annotate a slide` and `Run an analysis` are **source-verified** against
-HistomicsUI at commit `75a9be6`, not click-tested on a writable slide. Their
-pages state the limits.
-
 ## When something goes wrong
 
 - [Troubleshooting and FAQ](../troubleshooting.md) — symptom-first fixes for
@@ -75,3 +67,15 @@ The upstream site's
 URL is now a redirect to the upstream MkDocs documentation. Its one linked demo
 is already covered by [Try the demo](../get-started/try-the-demo.md). There is no
 separate tutorial list there to copy.
+
+??? note "Source and version"
+
+    Connect, create a folder, copy an item, and edit metadata were
+    **click-tested with a signed-in account** on <https://pub-data.bdsa.io/> on
+    2026-11-01, and the screenshots come from that run. Create a collection is
+    source-verified only: that instance restricts self-service collection
+    creation to administrators.
+
+    `Annotate a slide` and `Run an analysis` are **source-verified** against
+    HistomicsUI at commit `75a9be6`, not click-tested on a writable slide. Their
+    pages state the limits.

@@ -5,16 +5,6 @@ selected region. The tasks appear in the **Analyses** menu when a DSA
 administrator has registered Slicer CLI Web Docker images. This tutorial covers
 starting a task and finding its result.
 
-!!! info "Verified status"
-
-    This page is based on the HistomicsUI web client at commit
-    [`75a9be6`](https://github.com/DigitalSlideArchive/HistomicsUI/commit/75a9be6)
-    and its
-    [`docs/slicer_cli_plugins.rst`](https://github.com/DigitalSlideArchive/HistomicsUI/blob/master/docs/slicer_cli_plugins.rst).
-    It is **source-verified, not live-tested** in this documentation slice. The
-    available tasks, their parameters, and their output names come from the
-    installed images, so your menus will differ from the examples here.
-
 ## Before you start
 
 - You can open a slide in the viewer.
@@ -108,3 +98,13 @@ receive the automatic ingestion described above. The full schema is in
 - [Annotate a slide](annotate-a-slide.md)
 - [Annotation basics](../user-guide/annotations.md)
 - [Mouse and keyboard controls](../user-guide/controls.md)
+
+??? note "Source and version"
+
+    This page is based on the HistomicsUI web client at commit
+    [`75a9be6`](https://github.com/DigitalSlideArchive/HistomicsUI/commit/75a9be6)
+    and its
+    [`docs/slicer_cli_plugins.rst`](https://github.com/DigitalSlideArchive/HistomicsUI/blob/master/docs/slicer_cli_plugins.rst).
+    It is **source-verified, not live-tested** in this documentation slice. The
+    available tasks, their parameters, and their output names come from the
+    installed images, so your menus will differ from the examples here.

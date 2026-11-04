@@ -5,16 +5,6 @@ interest, a set of nuclei, a review comment, or the output of an analysis. This
 page explains the model and the controls you use every day. For a step-by-step
 walkthrough, see [Annotate a slide](../tutorials/annotate-a-slide.md).
 
-!!! info "Source and verification"
-
-    The labels, shortcuts, and behavior on this page were checked against the
-    HistomicsUI web client at commit
-    [`75a9be6`](https://github.com/DigitalSlideArchive/HistomicsUI/commit/75a9be6)
-    on 2026-11-01. This page was **not** click-tested on a writable slide in
-    this documentation slice, so treat the source as authoritative if your
-    deployment differs. The coverage of the underlying controls is also on
-    [Mouse and keyboard controls](controls.md).
-
 ## Annotation documents
 
 An annotation document belongs to one item. It contains:
@@ -136,3 +126,13 @@ annotations are in [Mouse and keyboard controls](controls.md).
 - [Annotate a slide](../tutorials/annotate-a-slide.md)
 - [Annotation style groups](annotation-groups.md)
 - [Run an analysis](../tutorials/run-an-analysis.md)
+
+??? note "Source and version"
+
+    The labels, shortcuts, and behavior on this page were checked against the
+    HistomicsUI web client at commit
+    [`75a9be6`](https://github.com/DigitalSlideArchive/HistomicsUI/commit/75a9be6)
+    on 2026-11-01. This page was **not** click-tested on a writable slide in
+    this documentation slice, so treat the source as authoritative if your
+    deployment differs. The coverage of the underlying controls is also on
+    [Mouse and keyboard controls](controls.md).

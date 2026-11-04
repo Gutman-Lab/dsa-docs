@@ -4,23 +4,6 @@ This page is organized by symptom. Find the section that matches what you see,
 then follow **Likely cause** and **Fix**. Each entry ends with a page or
 upstream source where the deeper detail lives.
 
-!!! info "Verification status"
-
-    Written on 2026-11-02 against the `devops/dsa` and `devops/ver5`
-    deployments at
-    [`2e16b9a`](https://github.com/DigitalSlideArchive/digital_slide_archive/commit/2e16b9a),
-    HistomicsUI at
-    [`75a9be6`](https://github.com/DigitalSlideArchive/HistomicsUI/commit/75a9be6),
-    `large_image` at
-    [`f4ad903`](https://github.com/girder/large_image/commit/f4ad903), and
-    Girder `3.x-maintenance` at
-    [`71e5fba`](https://github.com/girder/girder/commit/71e5fba).
-
-    Commands and paths below were read from those checked-in files and upstream
-    documentation. They were **not executed against a running DSA instance** in
-    this documentation slice. Commands marked **host command** or **operational
-    guidance** are standard system operations, not DSA-specific source.
-
 ## Install and startup {#install-and-startup}
 
 These commands run from the deployment directory: `devops/dsa` for the Girder
@@ -669,3 +652,20 @@ Open an issue in the repository that owns the failing part:
 Include the DSA release, the browser or client, the exact error text, and the
 relevant log lines. Do not paste passwords, API keys, internal hostnames, or
 patient data.
+
+??? note "Source and version"
+
+    Written on 2026-11-02 against the `devops/dsa` and `devops/ver5`
+    deployments at
+    [`2e16b9a`](https://github.com/DigitalSlideArchive/digital_slide_archive/commit/2e16b9a),
+    HistomicsUI at
+    [`75a9be6`](https://github.com/DigitalSlideArchive/HistomicsUI/commit/75a9be6),
+    `large_image` at
+    [`f4ad903`](https://github.com/girder/large_image/commit/f4ad903), and
+    Girder `3.x-maintenance` at
+    [`71e5fba`](https://github.com/girder/girder/commit/71e5fba).
+
+    Commands and paths below were read from those checked-in files and upstream
+    documentation. They were **not executed against a running DSA instance** in
+    this documentation slice. Commands marked **host command** or **operational
+    guidance** are standard system operations, not DSA-specific source.

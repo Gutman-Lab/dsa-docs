@@ -55,6 +55,26 @@ Short, task-based walkthroughs for the actions people need first:
 - [Annotate a slide](tutorials/annotate-a-slide.md)
 - [Run an analysis](tutorials/run-an-analysis.md)
 
+## Reference and help
+
+- [User guide](user-guide/index.md) — viewer controls, annotations, style
+  groups, and permissions.
+- [System overview](system-overview.md) — single-computer and
+  distributed-worker layouts.
+- [REST API cookbook](reference/rest-api.md) and
+  [Python client](reference/python-client.md) — drive DSA from scripts.
+- [Troubleshooting and FAQ](troubleshooting.md) — fixes for install, sign-in,
+  viewing, upload, permissions, annotations, and analysis jobs.
+
+## BDSA-specific documentation
+
+GutmanLab/BDSA additions to DSA stay on this site for now, so everything remains
+linkable from this landing page. More BDSA-specific guides will be added here as
+they are written.
+
+- [UI components (bdsa-react-components)](reference/bdsa-react-components.md) —
+  the shared React component library used by BDSA front ends.
+
 ## Project background
 
 - [About the project](about.md) — history, license, funding, and community.
@@ -69,7 +89,8 @@ Short, task-based walkthroughs for the actions people need first:
 
 - This repository is a staging area for consolidating DSA information and
   tutorials in one place. Some pages replicate material that still lives
-  upstream; each page records its source.
+  upstream; each page records its source and version in a collapsible note at
+  the bottom.
 - The documentation source lives in
   [`Gutman-Lab/dsa-docs`](https://github.com/Gutman-Lab/dsa-docs). Build and
   link-check instructions are in the repository

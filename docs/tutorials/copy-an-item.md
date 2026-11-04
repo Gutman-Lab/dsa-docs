@@ -118,6 +118,12 @@ Renaming the copy does not rename the original.
 | `Copy` fails with a permission error | Read-only access to the source, or no write access to the destination | Request the missing access from the collection owner. |
 | Two items have the same name and you cannot tell them apart | A copy keeps the original name | Open each item and compare the **Unique ID**, then rename the copy. |
 
+## Next
+
+- [Edit metadata](edit-metadata.md)
+- [Create a folder](create-a-folder.md)
+- [Upload and view your first slide](../get-started/first-slide.md)
+
 ## Verified status
 
 **Live-tested** on 2026-11-01 against <https://pub-data.bdsa.io/> (Girder API
@@ -127,9 +133,3 @@ second folder, and confirmed the copy appeared with the same name. The
 screenshots above come from that run. Menu labels and `copyItem` behavior also
 match the Girder `3.x-maintenance` source at
 [`71e5fba`](https://github.com/girder/girder/commit/71e5fba).
-
-## Next
-
-- [Edit metadata](edit-metadata.md)
-- [Create a folder](create-a-folder.md)
-- [Upload and view your first slide](../get-started/first-slide.md)
