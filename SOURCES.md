@@ -26,6 +26,7 @@ forking silently.
 | `docs/tutorials/connect.md` | New, from Girder `3.x-maintenance` UI source at `71e5fba` | Sign-in, registration, workspace, and API-key connection. Live-tested with a signed-in test account on `pub-data.bdsa.io` on 2026-11-01; screenshots captured. Two-factor login was not exercised. |
 | `docs/tutorials/create-a-collection.md` | New, from the live instance's served web client on 2026-11-01 | Collection creation and the private-by-default access rule. Live-tested end to end on `pub-data.bdsa.io` on 2026-11-01 with an administrator account, including creation and deletion of the test collection and its first folder. Collection creation is administrator-only there; a non-admin attempt is recorded in the page. |
 | `docs/tutorials/create-a-folder.md` | New, from Girder `3.x-maintenance` UI source at `71e5fba` | Folder creation flow. Live-tested on `pub-data.bdsa.io` on 2026-11-01; screenshots captured. |
+| `docs/tutorials/upload-images.md` | New 2026-11-06, from Girder `70eb94dcd` (`girder/api/v1/assetstore.py`, `girder/utility/filesystem_assetstore_adapter.py`, `girder/web/src/templates/body/filesystemImport.pug`), `DigitalSlideArchive/import-tracker` `055e395`, DSA `devops/ver5` and `devops/dsa/README.rst` at `2e16b9a`, and the live local DSA 5 stack | Compares drag and drop, `girder-client`, REST upload, and filesystem import. Upload routes were already verified in the REST and Python client pages; the bind-mount import was verified end to end on 2026-11-06: assetstore creation, recursive import with `leafFoldersAsItems`, file records with `imported: true` and an absolute `path`, and cleanup without deleting source data. S3 import remains source-only. |
 | `docs/tutorials/copy-an-item.md` | New, from Girder `3.x-maintenance` UI source at `71e5fba` | Pick-and-copy flow and the `copyItem` model behavior. Live-tested on `pub-data.bdsa.io` on 2026-11-01; screenshots captured. |
 | `docs/tutorials/edit-metadata.md` | New, from Girder `3.x-maintenance` UI source at `71e5fba` | Simple and JSON metadata editing plus key validation rules. Simple values live-tested on `pub-data.bdsa.io` on 2026-11-01; JSON editor and key validation remain source-verified. |
 | `docs/tutorials/share-a-collection.md` | Girder `AccessWidget.js` and `accessEditor` templates at `70eb94d`; `girder/large_image` annotation access docs at `f4ad903` | New 2026-11-02: Access control dialog, roles, private/public, subfolder propagation, access flags, and annotation ACL caveats. Live-tested end to end on a local DSA 5 stack with an owner and a non-admin user; screenshots captured. The bulk **Annotation access control** dialog was not exercised and its rules remain source-verified. |
@@ -60,9 +61,10 @@ page or merge into an existing page in a later slice.
   plugin configuration beyond style groups, permissions, and the full Slicer CLI
   schema. The annotation and analysis workflows are now represented here.
 - Girder user and administrator documentation that DSA relies on. The
-  DSA-specific API routes are now covered by the cookbook pages; Girder's
-  administrative settings, assetstores, and plugin management are still
-  upstream-only.
+  DSA-specific API routes are now covered by the cookbook pages, and filesystem
+  assetstore import is covered by `docs/tutorials/upload-images.md`; Girder's
+  other administrative settings, assetstore lifecycle, and plugin management
+  are still upstream-only.
 - Analysis task documentation beyond the verified `BackgroundIntensity` example:
   the full Slicer CLI schema, batch inputs, and task-image authoring.
 - Deployment material under `devops/` (external workers, version 5 stack,

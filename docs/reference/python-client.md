@@ -233,6 +233,8 @@ full table.
 
 ## Next
 
+- [Upload or import images](../tutorials/upload-images.md): compare this route
+  with drag and drop, the REST API, and importing from a bind-mounted store.
 - [REST API cookbook](rest-api.md): the same routes with `curl`.
 - [Connect to a server](../tutorials/connect.md): create an account and an API
   key in the browser.

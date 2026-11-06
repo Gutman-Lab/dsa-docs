@@ -50,6 +50,7 @@ Short, task-based walkthroughs for the actions people need first:
 - [Connect to a DSA server](tutorials/connect.md)
 - [Create a collection](tutorials/create-a-collection.md)
 - [Create a folder](tutorials/create-a-folder.md)
+- [Upload or import images](tutorials/upload-images.md)
 - [Copy an item](tutorials/copy-an-item.md)
 - [Edit metadata](tutorials/edit-metadata.md)
 - [Annotate a slide](tutorials/annotate-a-slide.md)

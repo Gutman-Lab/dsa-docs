@@ -46,6 +46,10 @@ not add sample data by default, so this is your first item.
 
 ![The uploaded file listed as an item](../assets/tutorials/item-uploaded.png)
 
+This drag-and-drop route is best for a few slides. For scripted uploads, the
+REST API, or importing files that already live on a mounted data store, see
+[Upload or import images](../tutorials/upload-images.md).
+
 ## 4. Open the slide
 
 1. Click the item to open its item page.
@@ -93,5 +97,7 @@ DSA instance or Docker daemon was available there. It is transcribed from
 
 ## Next
 
+- [Upload or import images](../tutorials/upload-images.md) — the other upload
+  routes and importing from a bind-mounted data store.
 - [Mouse and keyboard controls](../user-guide/controls.md)
 - [Next steps](next-steps.md)

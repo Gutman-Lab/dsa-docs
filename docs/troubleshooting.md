@@ -312,6 +312,63 @@ item.
   an assetstore to a larger volume.
 - **Where to look next:** [Disk full](#disk-full) and [Logs and status](#logs-and-status).
 
+## Import {#import}
+
+Importing creates DSA records for files that stay on a filesystem assetstore.
+It is different from uploading; see
+[Upload or import images](tutorials/upload-images.md#import-from-a-bind-mounted-data-store)
+for the full procedure.
+
+### The "Import data" button is missing {#import-button-missing}
+
+- **Symptom:** An assetstore card has no **Import data** button, or the
+  **Assetstores** page is not in **Admin console**.
+- **Likely cause:** The signed-in account is not an administrator, the
+  assetstore is not a filesystem or S3 assetstore, or the import-tracking plugin
+  did not load.
+- **Fix:** sign in as an administrator. On a DSA 5 image, check
+  `docker compose logs girder | grep -i import_tracker` for the plugin load
+  line. If the assetstore type is not importable, create a filesystem or S3
+  assetstore instead.
+- **Where to look next:** [Upload or import images](tutorials/upload-images.md).
+
+### "Unable to write into directory" when creating the assetstore {#assetstore-not-writable}
+
+- **Symptom:** Creating a filesystem assetstore fails with a validation message
+  naming the root directory.
+- **Likely cause:** The container user (`DSA_USER`) cannot write to the mounted
+  directory, or the mount is read-only. On NFS with root squash, a directory
+  created by `root` may be owned by `nobody`.
+- **Fix:** create the directory as the same numeric UID and GID as `DSA_USER`,
+  grant that user write access, and make sure the Compose mount is not
+  `:ro`. Recreate the assetstore after fixing the permissions.
+- **Where to look next:** [Upload or import images](tutorials/upload-images.md#1-bind-mount-the-directory).
+
+### Import finishes but finds no files {#import-path-not-found}
+
+- **Symptom:** The import job completes with zero checked files, or fails with
+  `Not found` / `The new import path does not exist`.
+- **Likely cause:** The import path was written as a host path instead of the
+  path inside the Girder container, or the mount is missing from that service.
+- **Fix:** use the container path, for example `/data/slides/2026`, and confirm
+  it exists with `docker compose exec girder ls /data/slides`. Remember that
+  the import path is interpreted by Girder, not by your workstation.
+- **Where to look next:** [Upload or import images](tutorials/upload-images.md#3-run-the-import).
+
+### An imported slide opens but the viewer cannot read it {#imported-slide-not-readable}
+
+- **Symptom:** The item exists, but **Open in HistomicsUI** is missing, tiles
+  fail, or only one file from a multi-file slide appears.
+- **Likely cause:** The format needs companion files and **Leaf Folders as
+  Items** was `False`, so the companion files became separate items. The source
+  path may also have moved or become unreadable.
+- **Fix:** re-import the leaf folder with **Leaf Folders as Items** set to
+  `True`, or check that the original directory still exists at the recorded
+  `path` and is readable by the container user. Confirm the format is supported
+  by `large_image`.
+- **Where to look next:** [Unsupported format](#unsupported-format) and
+  [Upload or import images](tutorials/upload-images.md#import-caveats).
+
 ## Permissions and sharing {#permissions}
 
 Collections and folders carry access control. Items inherit access from their

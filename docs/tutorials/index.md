@@ -27,6 +27,9 @@ These tutorials cover the actions people need first.
   set who can see it.
 - [Create a folder](create-a-folder.md) — add a folder in your personal space,
   a collection, or another folder.
+- [Upload or import images](upload-images.md) — choose between drag and drop,
+  `girder-client`, the REST API, and importing files that are already on a
+  bind-mounted data store.
 - [Share a collection or folder](share-a-collection.md) — grant a user or group
   the right role, make a folder public, and handle annotation access.
 - [Copy an item](copy-an-item.md) — duplicate a slide and its metadata into

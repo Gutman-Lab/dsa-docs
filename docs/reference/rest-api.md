@@ -523,6 +523,8 @@ source files:
 
 ## Next
 
+- [Upload or import images](../tutorials/upload-images.md): compare this route
+  with drag and drop, `girder-client`, and importing from a bind-mounted store.
 - [Python client](python-client.md): the same workflow with `girder-client`.
 - [Connect to a server](../tutorials/connect.md): creating an account and an
   API key in the browser.

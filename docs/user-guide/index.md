@@ -20,6 +20,7 @@ them, and annotating them.
 
 - [Connect to a DSA server](../tutorials/connect.md)
 - [Create a folder](../tutorials/create-a-folder.md)
+- [Upload or import images](../tutorials/upload-images.md)
 - [Share a collection or folder](../tutorials/share-a-collection.md)
 - [Copy an item](../tutorials/copy-an-item.md)
 - [Edit metadata](../tutorials/edit-metadata.md)
