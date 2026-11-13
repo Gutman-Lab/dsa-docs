@@ -69,6 +69,12 @@ nav:
       - Annotation basics: user-guide/annotations.md
       - Annotation style groups: user-guide/annotation-groups.md
       - Permissions and access control: user-guide/permissions.md
+  - Administration:
+      - Overview: admin/index.md
+      - Admin console tour: admin/admin-console.md
+      - Users, groups, and roles: admin/users-and-roles.md
+      - Assetstores and storage: admin/assetstores-and-storage.md
+      - Plugin and system settings: admin/settings.md
   - System Overview: system-overview.md
   - Tutorials:
       - Overview: tutorials/index.md

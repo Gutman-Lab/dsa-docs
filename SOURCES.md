@@ -21,6 +21,12 @@ forking silently.
 | `docs/user-guide/annotations.md` | HistomicsUI README, `web_client` panels and dialogs at `75a9be6`; `docs/config_options.rst` | Expanded 2026-11-01: annotation documents, panels, draw tools, autosave, element editing, job ingestion. Source-verified; not click-tested on a writable slide. |
 | `docs/user-guide/annotation-groups.md` | HistomicsUI `docs/config_options.rst` and `docs/annotation_group_restrictions.rst` at `75a9be6`, plus `web_client/utilities/allowedGroups.js` | New 2026-11-01: style-group YAML, hotkeys, `allowed_groups` validation, auto-creation, and selection behavior. Source-verified, not live-tested. |
 | `docs/user-guide/permissions.md` | Girder `docs/user-guide.rst` and web client access templates at `70eb94d`; `girder/large_image` `docs/girder_annotation_access.rst` at `f4ad903` | New 2026-11-02: roles, groups, private/public, inheritance, access flags, and annotation access rules. Role and inheritance behavior live-checked on a local DSA 5 stack; annotation ACL rules source-verified. |
+| `docs/admin/index.md` | New 2026-11-13, from the live local DSA 5 stack and `devops/ver5` at `2e16b9a` | Operator overview: who the section is for, the three control surfaces (web console, provision/Compose files, container runtime), and where each task lives. The `provision.py` behavior was source-checked; console URLs and the running services were checked live. |
+| `docs/admin/admin-console.md` | New 2026-11-13, from the live local DSA 5 web client and `devops/ver5` at `2e16b9a` | Tour of Users, Groups, Collections, Plugins, Server configuration, Assetstores, and Jobs; 19 live screenshots. The console menu, each page, and a completed import job log were exercised on the local instance. The extra `/WSI_PubData` assetstores in one screenshot are a local site mount, not stock. |
+| `docs/admin/users-and-roles.md` | New 2026-11-13, from the live local DSA 5 instance and Girder `5.0.23.dev5+g70eb94dcd` source (`girder/models/user.py`, `girder/api/v1/user.py`, `girder/models/group.py`) | Account creation, password reset, site-admin flag, disabling/re-enabling, deletion, and group roles. Account and group screens were live-checked; a temporary account was created, disabled, deleted, and its folders were confirmed removed. The disabled-login and delete behavior are source-verified. |
+| `docs/admin/assetstores-and-storage.md` | New 2026-11-13, from `devops/ver5` at `2e16b9a`, the live local DSA 5 instance, and Girder `filesystem_assetstore_adapter.py` | Assetstore model, the stock `/assetstore` bind mount, SHA-512 content-addressed layout, adding filesystem/S3/Girder/DICOMweb stores, path and permission pitfalls, and backup/restore. A test assetstore was registered and deleted; `mongodump` and `rsync` were run; a restore was exercised into a scratch database. The restore-over-live-data step was not run. |
+| `docs/admin/settings.md` | New 2026-11-13, from the live local DSA 5 instance, `devops/ver5` at `2e16b9a`, `large_image` cache documentation, and HistomicsUI `histomicsui/__init__.py` | Operator settings for system configuration, large_image/thumbnails, HistomicsUI, Slicer CLI Web, worker/RabbitMQ, and DICOMweb, with a restart/recreate table. A `large_image.max_thumbnail_files` change was saved and reverted without a restart; the HistomicsUI root-path restart requirement is source-verified. |
+| `docs/assets/admin/*.png` | Live capture | 21 screenshots of the console landing, users, user creation and admin flag, password reset, actions menu, groups and roles, collections, plugins and four plugin configuration pages, system settings and advanced settings, assetstores and two creation forms, jobs, and a job log. Captured on a local DSA 5 instance (`5.0.23.dev5+g70eb94dcd`) on 2026-11-13. |
 | `docs/system-overview.md` | Upstream `docs/system-overview/index.md` | Moved and lightly edited; diagrams copied. |
 | `docs/tutorials/index.md` | New | Tutorial index; lists the task walkthroughs and the remaining plan. |
 | `docs/tutorials/connect.md` | New, from Girder `3.x-maintenance` UI source at `71e5fba` | Sign-in, registration, workspace, and API-key connection. Live-tested with a signed-in test account on `pub-data.bdsa.io` on 2026-11-01; screenshots captured. Two-factor login was not exercised. |
@@ -57,18 +63,20 @@ page or merge into an existing page in a later slice.
   covered by [Try the demo](docs/get-started/try-the-demo.md).
   `docs/documentation/index.md` was reviewed on 2026-11-01: it is only a redirect
   to the upstream MkDocs site, with no tutorial list to copy.
-- Remaining HistomicsUI user and developer documentation: installation,
-  plugin configuration beyond style groups, permissions, and the full Slicer CLI
-  schema. The annotation and analysis workflows are now represented here.
-- Girder user and administrator documentation that DSA relies on. The
-  DSA-specific API routes are now covered by the cookbook pages, and filesystem
-  assetstore import is covered by `docs/tutorials/upload-images.md`; Girder's
-  other administrative settings, assetstore lifecycle, and plugin management
-  are still upstream-only.
+- Remaining HistomicsUI documentation: installation and developer or
+  plugin-authoring topics. The user workflows, permissions, and operator-facing
+  plugin configuration are now represented here; the full Slicer CLI task
+  schema remains queued.
+- Girder user documentation beyond the pages here. The DSA-specific API
+  routes and the operator-facing administration settings are now covered;
+  generic Girder concepts such as organizations, plugin development, and the
+  full server configuration reference remain upstream-only and are linked rather
+  than copied.
 - Analysis task documentation beyond the verified `BackgroundIntensity` example:
   the full Slicer CLI schema, batch inputs, and task-image authoring.
-- Deployment material under `devops/` (external workers, version 5 stack,
-  Apptainer and Docker image builds).
+- Deployment material beyond the single-machine `devops/ver5` stack: multi-node
+  and external workers, Slurm and Kubernetes, Apptainer and Docker image builds,
+  and legacy repository retirement.
 - Existing Gutman-Lab documentation repositories: `bdsa-docs`,
   `bdsa-readthedocs`, and `DSA-LLM-Docs`.
 

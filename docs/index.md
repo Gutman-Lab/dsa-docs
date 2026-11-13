@@ -6,9 +6,9 @@ HistomicsUI viewer and annotation interface, and containerized analysis tasks
 from HistomicsTK and other Slicer CLI Web tools.
 
 This documentation site is being rebuilt in focused slices. The **Get Started**
-path, the **task tutorials**, and the **controls reference** are ready to use.
-Some reference sections are still skeletons that point at the source material
-they will replace.
+path, the **task tutorials**, the **controls reference**, and the new
+**Administration** section are ready to use. Each page records its source and
+verification date in a collapsible note at the bottom.
 
 ## Start here
 
@@ -41,6 +41,13 @@ they will replace.
 
     [:material-arrow-right: Upload and view your first slide](get-started/first-slide.md)
 
+-   **Running an instance?**
+
+    Manage accounts, storage, plugins, and jobs, and know which changes need a
+    restart.
+
+    [:material-arrow-right: Administration overview](admin/index.md)
+
 </div>
 
 ## Everyday tutorials
@@ -55,6 +62,22 @@ Short, task-based walkthroughs for the actions people need first:
 - [Edit metadata](tutorials/edit-metadata.md)
 - [Annotate a slide](tutorials/annotate-a-slide.md)
 - [Run an analysis](tutorials/run-an-analysis.md)
+
+## Administration
+
+For the person who runs the DSA instance, rather than the researcher using it:
+
+- [Administration overview](admin/index.md) — the web console, the provision
+  and Compose files, and the container runtime.
+- [Admin console tour](admin/admin-console.md) — users, groups, collections,
+  plugins, system configuration, assetstores, and jobs.
+- [Users, groups, and roles](admin/users-and-roles.md) — creating accounts, the
+  site-admin flag, disabling accounts, and group roles.
+- [Assetstores and storage](admin/assetstores-and-storage.md) — the
+  `assetstore/` bind mount, registering storage, permission pitfalls, and what a
+  backup must include.
+- [Plugin and system settings](admin/settings.md) — the settings an operator
+  actually touches, and which changes need a restart.
 
 ## Reference and help
 
